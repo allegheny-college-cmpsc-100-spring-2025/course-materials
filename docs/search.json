@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "variables-data-types-operations.html#data-types",
+    "href": "variables-data-types-operations.html#data-types",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Data Types",
+    "text": "Data Types\nData types are the kinds of values that variables can hold. The data type of a value affects what you can do with it."
+  },
+  {
+    "objectID": "variables-data-types-operations.html#string-data-type",
+    "href": "variables-data-types-operations.html#string-data-type",
+    "title": "Variables, Data Types, and Operations",
+    "section": "String Data Type",
+    "text": "String Data Type\nStrings are text values. If a variable’s value is surrounded with ' or \", Python gives data type string\npet1 = \"dog\"\npet2 = 'cat'\nIf Python sees a word without quotes, it will look for a a variable with that name. If it can’t find one, it will throw an error."
+  },
+  {
+    "objectID": "variables-data-types-operations.html#numerical-data-types",
+    "href": "variables-data-types-operations.html#numerical-data-types",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Numerical Data Types",
+    "text": "Numerical Data Types\nint\nInts are integer numerical values. If a variable is assigned number value with no quotes and no decimal point, Python gives it data type int.\ni = 2\nfloat\nFloats are decimal numerical values. If a variable is assigned number value with no quotes and a decimal point, Python gives it data type float.\nf = 5.2"
+  },
+  {
+    "objectID": "variables-data-types-operations.html#math-operations-in-python",
+    "href": "variables-data-types-operations.html#math-operations-in-python",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Math Operations in Python",
+    "text": "Math Operations in Python\nPython provides a variety of built-in mathematical operations that can be performed on numeric data types, such as integers and floating-point numbers. Some common math operations include:\nAddition\nresult = 3 + 5  # Result will be 8\nSubtraction\nresult = 10 - 3  # Result will be 7\nMultiplication\nresult = 4 * 6  # Result will be 24\nDivision\nresult = 15 / 3  # Result will be 5.0 (float)\nModulo (Remainder)\nresult = 17 % 5  # Result will be 2\nExponentiation\nresult = 2 ** 3  # Result will be 8"
+  },
+  {
+    "objectID": "variables-data-types-operations.html#string-operations-in-python",
+    "href": "variables-data-types-operations.html#string-operations-in-python",
+    "title": "Variables, Data Types, and Operations",
+    "section": "String Operations in Python",
+    "text": "String Operations in Python\nPython also provides various string operations for manipulating and working with text data. Strings can be concatenated, sliced, and formatted in different ways.\nConcatenation\nstr1 = \"Hello\"\nstr2 = \"World\"\nresult = str1 + \" \" + str2  # Result will be \"Hello World\"\nString Length\ntext = \"Python\"\nlength = len(text)  # Length will be 6\nString Slicing\ntext = \"Python\"\nsubstring = text[0:3]  # Result will be \"Pyt\""
+  },
+  {
+    "objectID": "variables-data-types-operations.html#you-can-name-variables-almost-anything-you-want",
+    "href": "variables-data-types-operations.html#you-can-name-variables-almost-anything-you-want",
+    "title": "Variables, Data Types, and Operations",
+    "section": "You can name variables almost anything you want!*",
+    "text": "You can name variables almost anything you want!*\nIt’s a good idea to give your variables names that are a happy medium of descriptive and easy to type.\nThese two code blocks are the same in effect\nclr = \"blue\"\nprint(\"Imagine a \" + clr + \" sky\")\nc = \"blue\"\nprint(\"Imagine a \" + c + \" sky\")\nYou can’t start variable names with numbers in Python, and also shouldn’t give variables names that already have some function (like int, or in VPython, sphere)"
+  },
+  {
+    "objectID": "variables-data-types-operations.html#python-reads-code-blocks-top-to-bottom",
+    "href": "variables-data-types-operations.html#python-reads-code-blocks-top-to-bottom",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Python reads code blocks top to bottom",
+    "text": "Python reads code blocks top to bottom\n\nn = 5 # assigns var n value 5\nprint(n) # output: 5\nn = 7 # reassigns n a new value\nprint(n) # output: 7\nn = n + 2 # assigns n a value based on prior value\nprint(n) # output: 9\nThe complete output for the above:\n5\n7\n9"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Computational Expression",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
