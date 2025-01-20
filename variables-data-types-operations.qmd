@@ -3,35 +3,28 @@
 title: "Variables, Data Types, and Operations"
 subtitle: "CMPSC 100: Computational Expression, Spring 2025"
 author: "Morgan Green"
-format: revealjs
 slide-number: true
+format:
+  revealjs: 
+    theme: dark
 touch: true
 controls: true
 ---
-
 ::: incremental
+# Find the MadLib exercise link in Canvas! 
+<img src = "image.png" width = "50%" />
+:::
+::: incremental
+
 # Code Comments
 
+```python
+# This is a single line comment
+# Python will ignore this text
+```
 - Code comments are text in your code files that Python ignores. 
 - They are excellent for explaning what your code does, and for temporarily silencing code you may not want to delete. 
 - In this class, we will use more comments than a professional would, because erring on the side of over-explaning is a great way to learn. 
-
-
-
-:::
-
-::: incremental
-# Find the MadLib exercise link in Discord!
-
-<img src = "image.png" width = "350px" />
-
-Create a remix of the trinket [linked](https://trinket.io/python/3eaeec768d) in the Discord channel and follow the instructions in the code comments! When you're finished, reply to the Discord thread with your remixed Trinket. Once you've submitted your Trinket, you'll select another student's link from the thread to read to your table. 
-
-**If you can't see our class Discord channel**, make sure you have signed up for Discord and completed the Course Platforms assignment. E-mail the professor your Discord name so they can add you right away. 
-
-
-[-> Variables.md](/slides/variables-data-types-operations/04_variables.md)
-
 :::
 
 ::: incremental
@@ -40,7 +33,53 @@ Create a remix of the trinket [linked](https://trinket.io/python/3eaeec768d) in 
 Want some computer science support? Technical Leaders have office hours every week!  
 You can find these office hours linked in Canvas.
 
-![image](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/77f1c9a3-bb56-4f5f-b1a6-d17bd67e8c0a)
+
+:::
+
+
+::: incremental
+## Data Types
+
+Data types are the kinds of values that variables can hold.
+The data type of a value affects what you can do with it. 
+
+:::
+
+::: incremental
+## String Data Type
+
+Strings are text values. If a variable's value is surrounded with `'` or `"`, Python gives data type `string`
+
+```
+pet1 = "dog"
+pet2 = 'cat'
+```
+If Python sees a word without quotes, it will look for a a variable with that name. If it can't find one, it will throw an error.
+
+:::
+
+::: incremental
+
+## Numerical Data Types
+
+### int
+
+Ints are integer numerical values.  If a variable is assigned number value with no quotes and no decimal point, Python gives it data type `int`.
+
+```
+i = 2
+```
+
+
+### float
+
+Floats are decimal numerical values. If a variable is assigned number value with no quotes and a decimal point, Python gives it data type `float`. 
+
+```
+f = 5.2
+```
+
+
 
 :::
 
@@ -107,13 +146,11 @@ text = "Python"
 substring = text[0:3]  # Result will be "Pyt"
 ```
 
-[-> More Operations.md][def]
 
-[def]: /slides/variables-data-types-operations/09_asteriskStrNum.md
 :::
 
 ::: incremental
-## The same operator will sometimes produce different results with different data types
+### The same operator will sometimes produce different results with different data types
 
 ```python
 
@@ -130,7 +167,6 @@ result  = "Hey" * 3 # result will be HeyHeyHey
 ```
 
 
-[-> Python Order.md](/slides/variables-data-types-operations/10_pythonOrder.md)
 
 :::
 
@@ -153,7 +189,6 @@ print("Imagine a " + c + " sky")
 You can't start variable names with numbers in Python, and also shouldn't give variables names that already have some function (like int, or in VPython, sphere)
 
 
-[-> Data Types.md](/slides/variables-data-types-operations/06_dataTypes.md)
 
 :::
 
@@ -177,43 +212,6 @@ The complete output for the above:
 7
 9
 ```
-
-:::
-
-::: incremental
-## Data Types in Python
-
-Variables have different data types. Python assigns the data type of a variable based on its value. These are some common datatypes:
-
-### string
-Strings are text values. If a variable's value is surrounded with `'` or `"`, Python gives data type `string`
-
-```
-pet1 = "dog"
-pet2 = 'cat'
-```
->[!NOTE]
-> If Python sees a word WITHOUT quotation marks, it will look for a variable with that name. If it doesn't find one, it will throw an error. 
-
-### int
-
-Ints are integer numerical values.  If a variable is assigned number value with no quotes and no decimal point, Python gives it data type `int`.
-
-```
-i = 2
-```
-
-
-### float
-
-Floats are decimal numerical values. If a variable is assigned number value with no quotes and a decimal point, Python gives it data type `float`. 
-
-```
-f = 5.2
-```
-
-
-[-> Number Operations.md](/slides/variables-data-types-operations/07_numberOperations.md)
 
 :::
 
@@ -249,7 +247,6 @@ the start and the end of the comment block
 '''
 ```
 
-[-> Madlib.md](/slides/variables-data-types-operations/03_madlib.md)
 
 :::
 
