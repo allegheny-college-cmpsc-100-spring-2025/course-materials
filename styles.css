@@ -1,4 +1,14 @@
 /* css styles */
 
-body{background-color: #000000; color: #ffffff;}
 .reveal p {font-size: 1em;}
+.reveal pre code {font-size: 1.5em}
+.reveal pre.sourceCode code {font-size: 1.5em;}
+.reveal h1 {font-size: 2em;}
+.reveal[data-navigation-mode=linear] .title-slide h1 {
+    font-size: 2em;
+}
+.reveal[data-navigation-mode=linear] .slides section {
+    font-size: 1em;
+}
+
+
