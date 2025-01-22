@@ -2,6 +2,8 @@
 title: "Computational Expression"
 ---
 
-This is a Quarto website.
+## Lecture Content 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+- [About 100: Week 1 Slides](https://docs.google.com/presentation/d/1__n4P-7XFsDQa_AoRLDsemnBZ0JFrv8wf-2fNrr65Ys/edit)
+- [Variables, Datatypes, and Operations](variables-data-types-operations.html)
+
