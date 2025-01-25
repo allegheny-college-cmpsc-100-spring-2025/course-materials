@@ -6,8 +6,7 @@ author: "Morgan Green"
 slide-number: true
 format:
   revealjs: 
-    theme: dark
-    css: styles.css
+    theme: [dark, custom.scss]
 touch: true
 controls: true
 ---
