@@ -1,0 +1,228 @@
+
+---
+title: "Local Python"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Local Python 
+
+Running Python locally allows you to develop and test your code efficiently on your own machine.
+
+Steps: 
+
+1. **Install Python.** Download and install Python from the official website [python.org](https://www.python.org/downloads/). You may need to add Python to your system's PATH during installation.
+
+2. **Write or copy a Python Script.** Save your Python in format `<filename>.py` (for example `main.py`).
+
+3. **Run your script in Terminal**. Enter `python <filename>.py` (for example `python main.py`) in the Terminal and hit enter. Some systems will use `python3 <filename>.py` instead. 
+
+Detailed steps will be provided in our next problem set, which will be run locally. 
+
+
+
+
+:::
+::: incremental
+# Python vs. Python 3
+
+In this class, we use the lastest version of Python, which is **Python 3**. 
+
+On some systems, `python main.py` will run `main.py` using Python 3. On others, you need to type `python3 main.py` in order for your code to run correctly.
+
+For now, try both. Whichever one works for you is likely the one you will stick with for the rest of the term. :::
+::: incremental
+# Relative and Absolute Python File Paths
+
+In Python, file paths can be specified using either relative or absolute paths. (Remeber you might use `python3` instead of `python` in your Terminal commands, depending on your system.)
+
+---
+
+## Relative Paths
+
+Relative paths are specified relative to the current working directory of the script or the location from where the script is executed.
+
+ Assuming the current directory contains a folder named `build` with a file named `main.py`, this line would run the python code inside `build/main.py`:
+
+`python main.py`
+
+## Absolute Paths
+
+Absolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window. 
+
+This would run the same  `main.py` code as above, this time referencing the absolute path. 
+
+`python '/home/user/projects/project_name/data/file.txt'`
+
+Absolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents. 
+
+---
+
+### When to Use Each?
+
+- **Relative Paths**: Convenient for referencing files within the project structure, making code more portable.
+- **Absolute Paths**: Necessary when the file's location is fixed and independent of the execution environment or when accessing files outside the project directory.
+
+---
+
+Understanding relative and absolute paths helps in managing file operations effectively in Python scripts.
+:::
+
+---
+title: "Local Python"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Local Python 
+
+Running Python locally allows you to develop and test your code efficiently on your own machine.
+
+Steps: 
+
+1. **Install Python.** Download and install Python from the official website [python.org](https://www.python.org/downloads/). You may need to add Python to your system's PATH during installation.
+
+2. **Write or copy a Python Script.** Save your Python in format `<filename>.py` (for example `main.py`).
+
+3. **Run your script in Terminal**. Enter `python <filename>.py` (for example `python main.py`) in the Terminal and hit enter. Some systems will use `python3 <filename>.py` instead. 
+
+Detailed steps will be provided in our next problem set, which will be run locally. 
+
+
+
+
+:::
+::: incremental
+# Python vs. Python 3
+
+In this class, we use the lastest version of Python, which is **Python 3**. 
+
+On some systems, `python main.py` will run `main.py` using Python 3. On others, you need to type `python3 main.py` in order for your code to run correctly.
+
+For now, try both. Whichever one works for you is likely the one you will stick with for the rest of the term. :::
+::: incremental
+# Relative and Absolute Python File Paths
+
+In Python, file paths can be specified using either relative or absolute paths. (Remeber you might use `python3` instead of `python` in your Terminal commands, depending on your system.)
+
+---
+
+## Relative Paths
+
+Relative paths are specified relative to the current working directory of the script or the location from where the script is executed.
+
+ Assuming the current directory contains a folder named `build` with a file named `main.py`, this line would run the python code inside `build/main.py`:
+
+`python main.py`
+
+## Absolute Paths
+
+Absolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window. 
+
+This would run the same  `main.py` code as above, this time referencing the absolute path. 
+
+`python '/home/user/projects/project_name/data/file.txt'`
+
+Absolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents. 
+
+---
+
+### When to Use Each?
+
+- **Relative Paths**: Convenient for referencing files within the project structure, making code more portable.
+- **Absolute Paths**: Necessary when the file's location is fixed and independent of the execution environment or when accessing files outside the project directory.
+
+---
+
+Understanding relative and absolute paths helps in managing file operations effectively in Python scripts.
+:::
+
+---
+title: "Local Python"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Local Python 
+
+Running Python locally allows you to develop and test your code efficiently on your own machine.
+
+Steps: 
+
+1. **Install Python.** Download and install Python from the official website [python.org](https://www.python.org/downloads/). You may need to add Python to your system's PATH during installation.
+
+2. **Write or copy a Python Script.** Save your Python in format `<filename>.py` (for example `main.py`).
+
+3. **Run your script in Terminal**. Enter `python <filename>.py` (for example `python main.py`) in the Terminal and hit enter. Some systems will use `python3 <filename>.py` instead. 
+
+Detailed steps will be provided in our next problem set, which will be run locally. 
+
+
+
+
+:::
+::: incremental
+# Python vs. Python 3
+
+In this class, we use the lastest version of Python, which is **Python 3**. 
+
+On some systems, `python main.py` will run `main.py` using Python 3. On others, you need to type `python3 main.py` in order for your code to run correctly.
+
+For now, try both. Whichever one works for you is likely the one you will stick with for the rest of the term. :::
+::: incremental
+# Relative and Absolute Python File Paths
+
+In Python, file paths can be specified using either relative or absolute paths. (Remeber you might use `python3` instead of `python` in your Terminal commands, depending on your system.)
+
+---
+
+## Relative Paths
+
+Relative paths are specified relative to the current working directory of the script or the location from where the script is executed.
+
+ Assuming the current directory contains a folder named `build` with a file named `main.py`, this line would run the python code inside `build/main.py`:
+
+`python main.py`
+
+## Absolute Paths
+
+Absolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window. 
+
+This would run the same  `main.py` code as above, this time referencing the absolute path. 
+
+`python '/home/user/projects/project_name/data/file.txt'`
+
+Absolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents. 
+
+---
+
+### When to Use Each?
+
+- **Relative Paths**: Convenient for referencing files within the project structure, making code more portable.
+- **Absolute Paths**: Necessary when the file's location is fixed and independent of the execution environment or when accessing files outside the project directory.
+
+---
+
+Understanding relative and absolute paths helps in managing file operations effectively in Python scripts.
+:::

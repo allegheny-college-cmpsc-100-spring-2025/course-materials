@@ -1,0 +1,137 @@
+
+---
+title: "About 100"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Stay with the problems! 
+
+![Alt text](image.png)
+
+> ### “It’s not that I’m so smart, it’s just that I stay with problems longer.” 
+> #### — Albert Einstein
+
+
+
+:::
+::: incremental
+# Course Expectations
+
+- Get excited that it's hard! More effort = more reward
+- (Expect and embrace frustration)
+- Standard college course expectation: 5-10 hours of work outside class time
+- If something doesn't come together in lecture, use resources provided in syllabus to help you understand. Take the time to figure out how you learn best. 
+- Read each word of written instructions
+
+
+:::
+::: incremental
+# Where to Find Content
+
+You can find all the GitHub and Discord links you need on the Canvas homepage, but you'll turn in assignments on GitHub, not Canvas. 
+
+![Alt text](image-7.png)
+
+This course uses GitHub Classroom instead of Canvas for assignment submission. This is because GitHub classroom is specialized for coding instruction, and Canvas is not.
+
+Course updates will be posted in Discord.
+
+
+:::
+::: incremental
+# Discord
+
+<img src = "image-1.png" width = "400px" />
+
+Discord is a messaging and sharing platform that allows people to exchange all kinds of media in a variety of formats. It will be the primary source of communication for this class, so you'll be expected to have an account and stay active.
+
+
+
+:::
+::: incremental
+# GitHub
+
+<img src = "image-2.png" width = "300px" />
+
+GitHub is a cloud-based platform for hosting code.  It is an industry standard tool and knowing it unlocks countless doors. 
+
+A Git repository (or repo) is essentially a folder for code, where you can collaborate manage version history. It will often also include instructions.  
+
+Each assignment in this class links to a different GitHub repo. 
+
+:::
+::: incremental
+# Python
+
+<img src = "image-6.png" width = "300px" />
+
+Python is the programming language we will use in this class. It is known for being readable and versatile: there are many free open-source libraries you can use to extend Python's capabilities. 
+
+
+
+:::
+::: incremental
+# VPython
+
+<img src = "image-4.png" width = "400px" />
+VPython is a Python library that allows you to render 3D graphics in Python language. Python libaries (sometimes called modules) need to be imported so we can access their capabilities. 
+
+
+
+:::
+::: incremental
+# Trinket
+
+<img src = "image-5.png" width = "500px" />
+
+Trinket is a browser-based coding platform that we will use in the first half of the semester so that we can code right away without having to install anything.
+
+We will be using two kinds of Trinket in this class: Python and VPython. VPython trinkets have the VPython module already imported. Python trinkets only include the base Python language. 
+
+[next: markdown.md](/09_markdown.md)
+
+:::
+::: incremental
+# Markdown
+## another header
+### a smaller header
+ 
+Documents that end with `.md` (like this one!) will render as **markdown**. It is a lightweight markup system that allows you to format text professionally.
+
+In this class, you'll be expected to edit markdown files. Instructions will also be provided in this format. 
+
+
+
+:::
+::: incremental
+# Laptops
+
+This course requires a laptop with the specifications linked in the syllabus. 
+
+If your laptop isn't ideal for coding, you can request a loaner laptop using the form linked in the syllabus. Sometimes it's a good idea to borrow a department laptop so your code isn't competing for RAM with your games etc. :::
+::: incremental
+# Attendance Today
+
+## When I call you, tell us...
+
+1. Whatever name you prefer to be called
+2. Your pronouns, if you want to
+3. Description of a time a computer or piece of software has messed up or failed you! OR a time when software has helped you a lot. 
+4. Your preferred name again.
+
+## Request!
+
+Please sit in the same spot for the first couple weeks of class while I am learning everyone's name. (It will take me a little time.) 
+:::
+::: incremental
+# Lab Starts Week 2! 
+
+### Our first lab session will take place on Friday, January 26 as we get settled in to the new semester. :::

@@ -7,5 +7,59 @@
   },
   "variables-data-types-operations.qmd": {
     "variables-data-types-operations.html": "d3618f0c"
+  },
+  "test/index.qmd": {
+    "index.html": "1e462bbd"
+  },
+  "classes-methods/index.qmd": {
+    "index.html": "0fafd360"
+  },
+  "qm.qmd": {
+    "qm.html": "7c995baf"
+  },
+  "lists-for-loops/index.qmd": {
+    "index.html": "1977bdb5"
+  },
+  "conditionals/index.qmd": {
+    "index.html": "556899c3"
+  },
+  "command-line-files/index.qmd": {
+    "index.html": "0cb53858"
+  },
+  "math-functions/index.qmd": {
+    "index.html": "535a52cf"
+  },
+  "lists-for-loops-contd/index.qmd": {
+    "index.html": "5f31288b"
+  },
+  "while-loops/index.qmd": {
+    "index.html": "a7f6e470"
+  },
+  "git-github/index.qmd": {
+    "index.html": "77952b20"
+  },
+  "while-true/index.qmd": {
+    "index.html": "83ee0e0b"
+  },
+  "local-python/index.qmd": {
+    "index.html": "e3e016de"
+  },
+  "vpython-shapes-and-colors/index.qmd": {
+    "index.html": "bf21a425"
+  },
+  "variables-data-types-operations/index.qmd": {
+    "index.html": "ab67844c"
+  },
+  "about-100/index.qmd": {
+    "index.html": "816436d7"
+  },
+  "dictionaries/index.qmd": {
+    "index.html": "561b411e"
+  },
+  "reminders/index.qmd": {
+    "index.html": "6a49ae91"
+  },
+  "teamwork/index.qmd": {
+    "index.html": "5acb1663"
   }
 }

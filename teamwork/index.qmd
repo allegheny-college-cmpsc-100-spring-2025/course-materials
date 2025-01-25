@@ -1,0 +1,61 @@
+
+---
+title: "Teamwork"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Teamwork in Git and Github
+
+Git and GitHub include collaboration features which allow multiple team members to work in the same repo and even in the same document at the same time. 
+
+<img src = image-4.png width = 450px style = "max-width:450px" />
+
+There are three important concepts involved: **teamwork**, **branches**, and **merge**. 
+
+:::
+::: incremental
+# Branches 
+
+Branches allow you to "branch off" from the main codebase. Creating a branch means creating a copy of the current branch where you can make changes without affecting the original 
+
+<img src = image.png width = 600px style = "max-width:600px" />
+
+In this image, there are three branches: "Master" in green, "Someone else's work" in orange, and "Your work" in blue. 
+
+:::
+::: incremental
+# Pull Requests
+
+<img src = image.png width = 600px style = "max-width:600px" />
+
+Pull requests allow you to request your code be merged into the main branch. Pull requests require a layer of validation so that code isn't merged in before it's ready.
+
+When you make a pull request, another team member checks it and approves it before it's moved in. 
+
+:::
+::: incremental
+# Merges
+
+<img src = image.png width = 600px style = "max-width:600px" />
+
+When a pull request is accepted, the code in question is **merged** into the main branch. It becomes a part
+
+:::
+::: incremental
+# Merge Conflicts
+
+
+Sometimes, merging code will mean choosing between one version or the other.
+
+If you follow the directoins exactly, the pull request we are doing in this class will not cause merge conflicts. But if something goes a little awry you may have to resolve your merges using the merge editor in VSCode. 
+
+<img src = image-3.png width = 600px style = "max-width:600px" />
+:::

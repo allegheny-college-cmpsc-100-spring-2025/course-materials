@@ -7,13 +7,12 @@ $background-color:      #000000 !default;
 h1, h2, h3, h4, h5, h6 {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
 }
-.reveal .slide {font-size: 1em;}
-.reveal p {font-size: 1em;}
+.reveal .slide p {font-size: 0.8em; line-height: 1.1em;}
 .reveal pre code {font-size: 1.5em}
-.reveal pre.sourceCode code {font-size: 1.5em;}
-.reveal h1 {font-size: 2em;}
+.reveal pre.sourceCode code {font-size: 1em;}
+.reveal h1 {font-size: 1em;}
 .reveal[data-navigation-mode=linear] .title-slide h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .reveal[data-navigation-mode=linear] .slides section {
     font-size: 1em;

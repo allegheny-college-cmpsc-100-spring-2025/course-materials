@@ -1,0 +1,156 @@
+
+---
+title: "Reminders"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Thank you for filling out the course feedback survey! 
+## Here are a few thoughts based on your answers:
+
+- I have seen progress in Python skills for every single one of you. Remember to compare your progress to yourself at the start of the semester, and not to your classmates who may have come in with a different level of experience.
+- If you ever feel lost, please book an office hours appointment! The link is on this course's
+canvas home page. This is the best way I can calibrate my teaching for your individual learning (instead of for twenty different people). 
+- I will also work on adjusting the pace of demos
+- It is unlikely that I can find an efficient way to post assignments for this class in Canvas, but I will look into it.
+
+[Office Hours Link](officeHoursLink.md)
+:::
+::: incremental
+# Course Feedback Surveys
+
+Please take time to fill out both of these surveys today. Your thoughtful feedback is so valuable! 
+
+Remember to think of your skills as compared to where you were in January! 
+
+1. [Course Learning Outcomes Survey](https://docs.google.com/forms/d/e/1FAIpQLSdkcYcd89d8TBf_SIEPBFz15wY31r-3ZXOkwwlU-acrv-b62A/viewform?usp=sf_link)
+2. [RSE Course Evaluations](https://p1.courseval.net/etw/ets/et.asp?CFNK=061C4F4A-09E1-42F8-8CDE-C3BE9D0F1F0F&nxappid=AG2&nxmid=GetSurveyForm&wsedrq=N0YR6QW045)
+:::
+::: incremental
+# First Coding Quiz on February 9!
+
+- This quiz will be closed book, on paper. It willl cover lecture content from Week 1 - Week 3, and include short answer and multiple choice questions.
+- The best materials to study are:
+  - [Problem Set 1](https://classroom.github.com/assignment-invitations/cc9858ef90aae8896abac13122a8ef3f)
+  - [Problem Set 2](https://classroom.github.com/a/bvROnoOH)
+  - [Lecture Materials](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/tree/main?tab=readme-ov-file#modulus-feb-1) from January 23 - February 1
+:::
+::: incremental
+# Lab Resubmission
+
+You can resubmit individual labs (except the final project) for two weeks after receiving your grade.
+The Pastiche Animation resubmission deadline is May 5. 
+
+**You can find your initial lab grade in your gradebook [here](https://classroom.github.com/a/7dLK4j3-).**
+
+**To resubmit a lab, update it in the original assignment repo and then e-mail the professor before the resubmit deadline.** 
+:::
+::: incremental
+# Lab Shares
+
+- Everyone is required to share one lab each semester.
+- When you share you should include the following info: 
+  - Your creative goals for the assignment
+  - Explain the section of code you found the most challenging
+  - Talk about something new you learned from the lab
+  - Explain what you are most proud of in the assignment
+- If you would like to share your most recent lab, put a link to your Trinket in the class Discord channel. 
+:::
+::: incremental
+# Work Day with Technical Leaders Tomorrow
+
+I will be traveling for a conference tomorrow, but Technical Leaders will be here during lab to help you with assignmnents!
+
+![image](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/9ded7676-a606-4d1d-864b-81a6e4786e49)
+
+
+:::
+::: incremental
+# Lab will NOT meet tomorrow!
+
+As a reminder, we will not have lab on Friday, March 1. Enjoy spring break!!
+
+![image](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/a553b3e0-4ff9-4b77-bd9c-96c14274c95d)
+:::
+::: incremental
+# Where to Find and Book Office Hours
+
+<img width="506" alt="image" src="https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/26af4f01-2333-4010-b8d8-30d5ee68eb29">
+
+Find office hours [here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1ZnFy9IkWemSjQ98WWhGh7UVwkph3U2RuDrrLt781dWM4x_bQPunp9mylOe8TXdHWjtKpGa1SP) or at the above link on the Canvas home page!
+:::
+::: incremental
+# Next Coding Quiz on February 23!
+
+- This quiz will be closed book, on paper. It willl cover lecture content from Week 4 - Week 5, and include short answer and multiple choice questions.
+- The best materials to study are:
+  - [Problem Set 3](https://classroom.github.com/a/YirqgstC)
+  - [Lecture Materials](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/blob/main/README.md#lists-and-for-loops-continued-213) from Feb 8 - 13
+- Note that the quiz after this one will be cumulative! But the 2/23 quiz covers only Week 4 - 5. 
+
+## A Quick Reminder
+
+- Lab meets every Friday unless I specify otherwise!
+- Lab now meets in room 207 at 2:45 pm. I encourage you to enjoy iTea downstairs before class starts!
+:::
+::: incremental
+# Next Coding Quiz on March 15!
+
+This quiz will be closed book, on paper. It willl cover all course content covered before spring break. 
+  - [Problem Set 1](https://classroom.github.com/a/UNxAOcxS)    
+  - [Problem Set 2](https://classroom.github.com/a/bvROnoOH)  
+  - [Problem Set 3](https://classroom.github.com/a/YirqgstC)
+  - [Problem Set 4](https://classroom.github.com/a/o3j_EDOb) 
+  - [Quiz #2 Solutions](https://drive.google.com/file/d/1QPUHFDk4aksFzbfMOMz-ecfU3TaeuHiF/view?usp=drive_link)
+  - [Lecture Materials](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/blob/main/README.md#lists-and-for-loops-continued-213) from Jan 23 - Feb 26
+
+## A Quick Reminder
+
+No lab tomorrow! 
+:::
+::: incremental
+# Quiz #5 Information
+
+Quiz #5 will cover the following Terminal commands:
+- `mkdir`
+- `cd`
+- `echo`
+- `git clone`
+- `git add`
+- `git commit`
+- `git push`
+
+To best prepare for the quiz, review the following materials
+- [Lecture slides from 3/12 and 3/19](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/blob/main/README.md#git--github-319)
+- [Clone Commit Push](https://classroom.github.com/a/inFop3Mr) including the [demo video](https://drive.google.com/file/d/1bTXvftVQtvPRS-oC1Ky67Xh9WS4yTmfC/view?usp=sharing)
+- [Command Your Files](https://classroom.github.com/a/Oua4f7-l) including the [demo video](https://drive.google.com/file/d/1S-GEEbW3krqZ-lhDL-tTbnBlR24H3T4t/view?usp=sharing)
+
+
+UPDATE: Terminal commands will be added to coding fundamentals now, and functions and return will be combined into one category. Classes and methods will still be included. 
+:::
+::: incremental
+# Quiz #6 Information 
+
+Quiz #6 will take place on April 19. It will cover all lecture content so far, with a special emphasis on dictionaries, classes, and methods. 
+
+You should study ...
+- [Problem Set 5](https://classroom.github.com/a/s1UujlD8)
+- [Problem Set 6](https://classroom.github.com/a/6zlnpSeQ)
+- [Previous Quiz Solutions](https://drive.google.com/drive/folders/1OVKNBXIP40qVGdsDrIQB9N90JX5sQGlC?usp=drive_link)
+:::
+::: incremental
+# Feb 9 Quiz etc.
+
+- You will have 30 minutes to complete the quiz. Write your first and last name on it, and turn it into professor complete.
+- Please refrain from discussing the quiz with other students for two weeks. 
+- It is gorgeous outside! You may leave and enjoy the weather after finishing your quiz if you so choose. Just don't forget:
+  - Your 3D Canvas Lab is due Monday night
+  - Your first coding challenge is due 2/19
+:::

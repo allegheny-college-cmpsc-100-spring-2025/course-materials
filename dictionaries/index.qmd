@@ -1,0 +1,121 @@
+
+---
+title: "Dictionaries"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Dictionaries | Welcome Activity
+
+Use [this link](https://trinket.io/python/22232e8cdf) to respond to ANY of the following prompts (you don't need to do all of them). You can answer questions in the Discord thread or verbally in class. 
+
+As you try things out, feel free to post your remixed trinkets in the Discord thread. 
+
+- What happens when you change the numbers on line 9?
+- What happens when you change `"Sally"` to a different name? 
+- The value of `myCar`is a dictionary data type. Can you guess what the `{}`, `:`, and `,` do when you declare a dictionary? 
+- How can you remove the name text from the animation?
+
+## Seeds for future learning
+
+The starter code includes `import` (lines 5-6) and some new string manipulations (line 17, 21). We will cover these topics in more detail in later classes. 
+
+:::
+::: incremental
+# Python Dictionaries
+
+Dictionaries in Python are unordered collections of key-value pairs. They are mutable and versatile data structures, allowing for efficient lookup, insertion, and deletion operations. Keys must be unique and immutable, while values can be of any data type.
+
+Example:
+```python
+# Creating a dictionary
+my_dict = {'apple': 5, 'banana': 7, 'orange': 3}
+
+# Accessing values
+print(my_dict['banana'])  # Output: 7
+
+# Modifying values
+my_dict['apple'] = 8
+
+# Adding new key-value pairs
+my_dict['grape'] = 4
+
+# Removing a key-value pair
+del my_dict['orange']
+
+# Iterating over keys
+for key in my_dict:
+    print(key, my_dict[key])
+```
+
+:::
+::: incremental
+# Understanding Keys and Values in Python Dictionaries
+
+In Python dictionaries, keys and values play crucial roles in organizing and accessing data efficiently.
+
+## Keys
+
+Keys are the immutable (meaning stable and unchanging) names for values within a Python dictionary. 
+
+**Keys must be unique** within a dictionary; duplicate keys are not allowed.
+
+## Values
+
+Dictionary values are... 
+
+- **flexible**: They can be of any data type, including integers, floats, strings, lists, tuples, dictionaries, or even custom objects.
+- **mutable**: Unlike keys, values can be mutable or immutable. This allows for storing and accessing dynamic data structures within a dictionary.
+- **accessed with keys**: Values are accessed using their corresponding keys, providing a fast and efficient way to retrieve information from a dictionary.
+
+
+:::
+::: incremental
+# Accessing Values in Python Dictionaries 
+
+Dictionaries in Python provide efficient ways to access values using keys. You can access a value by naming the dictionary and immediatly following, naming the key between two hard brackets:
+
+`dict[key]`
+
+For example: 
+```python
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'London'}
+
+# Accessing a value using key
+name = my_dict['name'] 
+print(name)  # Output: Alice
+print(my_dict['city']) # Output: London 
+```
+
+:::
+::: incremental
+# Adding and Modifying Keys and Values
+
+You can modify or add key-value pairs to a dictionary with the following syntax:
+
+dict[key] = val
+
+For example:
+```
+fruit = {} # initialize an empty dictionary
+fruit["apples"] = 8 # updated value {"apples": 8}
+fruit["grapes"] = 20 # updated value {"apples": 8, "grapes": 20}
+fruit["apples"] = 4 # {"apples": 4, "grapes": 20}
+```
+
+:::
+::: incremental
+# Dictionaries vs Lists
+
+Why would you use a dictionary instead of a list or vice versa? 
+
+A list is great for values that are best accessed by index or iterated through in a loop. Often, a list is the best choice of datatype when the order of the values matters, but the values will be used in the same way.
+
+A dictionary is most useful when values need to be looked up efficiently by name. This makes sense when different values are being used in different ways in a consistent structure. :::

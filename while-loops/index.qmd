@@ -1,0 +1,183 @@
+
+---
+title: "While Loops"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Boolean Expressions in Python
+
+
+
+Boolean expressions in Python evaluate to either `True` or `False`. Examples:
+
+
+
+```python
+
+x = 5
+
+y = 10
+
+
+
+result = x < y  # True
+
+result2 = x == y  # False
+
+result3 = x >= y  # False
+
+```
+
+[Click here](https://trinket.io/python/4f08f4915c) for Trinket example.
+
+
+
+
+:::
+::: incremental
+# Comparison Operators
+
+
+
+In programming, comparison operators are used to compare values and return a boolean result. Common operators include:
+
+
+
+- `==` (equal to)
+
+- `!=` (not equal to)
+
+- `<` (less than)
+
+- `>` (greater than)
+
+- `<=` (less than or equal to)
+
+- `>=` (greater than or equal to)
+
+
+
+These operators are fundamental for creating boolean expressions, which evaluate to either `True` or `False`.
+
+
+
+
+
+
+:::
+::: incremental
+# While Loops in Python
+
+
+
+While loops in Python execute a block of code as long as a specified condition is `True`. Example:
+
+
+
+```python
+
+count = 0
+
+while count < 5:
+
+    print(count)
+
+    count += 1
+
+```
+
+
+:::
+::: incremental
+# Indentation in Python
+
+ **Indentation** tells Python where a block of code begins and ends. So extending last slide's example...
+
+ ```python
+
+count = 0 # set count
+while count < 5:
+    # anything at this indendation level
+    # executes inside the while loop
+    print(count) 
+    count += 1
+# once we indent back out, any code that follows is not in the loop
+count = 0 # reset count
+```
+
+:::
+::: incremental
+# Fear Infinity!
+
+
+
+<img src = "image.png" width = "400px" />
+
+
+
+BEWARE THE INFIINITE LOOP! If you create a while Loop with a condition that is **always** True, your program might hang (get stuck). This can end up crashing your whole computer.
+
+
+
+```python
+
+# this loop will run forever, causing your program to crash 
+
+i = 5
+
+while i >= 5:
+
+    i = i + 1
+
+```
+
+
+
+
+:::
+::: incremental
+# While-loops can be used to repeat shapes in VPython
+
+
+
+![](image-1.png)
+
+
+
+See trinket [here](https://trinket.io/glowscript/2547414cf3)
+
+
+
+
+:::
+::: incremental
+# Input Function in Python
+
+
+
+Python's `input()` function collects user input. It can assign that input to a variable. It always returns a **string** value, regardless of input. 
+
+
+
+Example:
+
+
+
+```python
+
+# greets a person after asking their name
+
+name = input("Enter your name: ")
+
+print("Hello, " + name + "!")
+
+```
+

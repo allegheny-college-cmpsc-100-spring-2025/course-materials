@@ -1,0 +1,492 @@
+
+---
+title: "Command Line Files"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Local Development
+
+Local development is computer-programming where the code you write lives on your computer's hard drive. 
+
+In Computer Science 100, we started out doing all of our work in the web browser. While this is a great way to get started coding fast, local development is an important part of computer programming. It allows you to work on multiple files at once, to collaborate with other coders, and to work without an internet connection. It also allows you to version your code in Git so you can go back to different versions of what you've done and reference archived code.
+
+:::
+::: incremental
+# Benefits of Working Locally
+
+- Working with multiple files at once
+- Importing additional code into your project, giving it many more capabilities
+- Saving multiple versions of your code
+- Working offline
+- Working collaboratively 
+- Professionalism
+
+:::
+::: incremental
+# Terminal
+
+<img src = "image.png" width = "450px" />
+
+Also known as the **shell**, **CLI (Command Line Interface)**, or **command prompt**. Terminal is a text-based interface that allows you to interact with your computer's operating sysem. Capabilties include: file management, system configuration etc. 
+
+
+
+:::
+::: incremental
+# Operating System Differences
+
+<img src = "image-1.png" width = "300px" />
+
+Different operating systems (e.g Mac, Windows, Linux) and system configurations mean that the commands that work on your system ma ybe slightly different from those that work on your classmate's or professor's.
+
+For example, some people will use the command `python` to execute Python files, whereas others will use `python3`. 
+
+:::
+::: incremental
+# Gradual Intro to Local Development
+
+Local computer-programming requires you to set up your computer in a special way (a process that is often tedious and will differ from student to student).
+
+For this reason, we will learn to do local development gradually while still doing some assignments on Trinket. You may need help from TLs and/or professor in setting up your computer. 
+
+:::
+::: incremental
+# File Systems
+
+**Folders** (also known as **paths** or **directories**) can hold both files and other folders. A tree metaphor is often used to describe file systems, but a box that holds both objects (files) and other boxes (folders) is another way to think about it.
+
+These are two representations of the same file system. 
+
+<img width = "300px" src = "image-2.png" />
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+         
+
+:::
+::: incremental
+# Parents, Children, Siblings
+
+Parents, children, and siblings describe relations between files and folders. In this folder tree, `red` is a parent of `yellow` and `orange`. `Green` and `purple` are children of `yellow`. `Yellow` and `orange` are siblings. 
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+
+
+
+:::
+::: incremental
+# Visual Studio Code
+
+<img src = "image-3.png" width = "400px" />
+
+**Visual Studio Code** (or VSCode) is an industry-standard **Integrated Development Environment**. It is a lightweight, open-source code editor developed by Microsoft. It supports various programming languages, offers customizable features, extensions, and built-in Git integration for coding and development projects.
+
+VSCode is required for many Computer and Information Science classes here at Allegheny. 
+
+
+
+:::
+::: incremental
+# Basic Commands for File Management
+
+Many command lines take arguments, just like functions in Python. Positiional arguments are listed directly after the command. 
+
+```terminal
+$ mkdir red # makes directory red
+$ cd red # chooses directory red
+$ echo "one" > 1.txt # writes 'one' to file 1.txt, inside red folder
+$ cd .. # chooses parent directory (the path holding path red)
+
+```
+
+> [!NOTE]
+> When example Terminal commands are formatted as above, only the text between `$` and `#` should be typed. `$` indicates a new line and the `#` text is a comment explaining the code. 
+:::
+
+---
+title: "Command Line Files"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Local Development
+
+Local development is computer-programming where the code you write lives on your computer's hard drive. 
+
+In Computer Science 100, we started out doing all of our work in the web browser. While this is a great way to get started coding fast, local development is an important part of computer programming. It allows you to work on multiple files at once, to collaborate with other coders, and to work without an internet connection. It also allows you to version your code in Git so you can go back to different versions of what you've done and reference archived code.
+
+:::
+::: incremental
+# Benefits of Working Locally
+
+- Working with multiple files at once
+- Importing additional code into your project, giving it many more capabilities
+- Saving multiple versions of your code
+- Working offline
+- Working collaboratively 
+- Professionalism
+
+:::
+::: incremental
+# Terminal
+
+<img src = "image.png" width = "450px" />
+
+Also known as the **shell**, **CLI (Command Line Interface)**, or **command prompt**. Terminal is a text-based interface that allows you to interact with your computer's operating sysem. Capabilties include: file management, system configuration etc. 
+
+
+
+:::
+::: incremental
+# Operating System Differences
+
+<img src = "image-1.png" width = "300px" />
+
+Different operating systems (e.g Mac, Windows, Linux) and system configurations mean that the commands that work on your system ma ybe slightly different from those that work on your classmate's or professor's.
+
+For example, some people will use the command `python` to execute Python files, whereas others will use `python3`. 
+
+:::
+::: incremental
+# Gradual Intro to Local Development
+
+Local computer-programming requires you to set up your computer in a special way (a process that is often tedious and will differ from student to student).
+
+For this reason, we will learn to do local development gradually while still doing some assignments on Trinket. You may need help from TLs and/or professor in setting up your computer. 
+
+:::
+::: incremental
+# File Systems
+
+**Folders** (also known as **paths** or **directories**) can hold both files and other folders. A tree metaphor is often used to describe file systems, but a box that holds both objects (files) and other boxes (folders) is another way to think about it.
+
+These are two representations of the same file system. 
+
+<img width = "300px" src = "image-2.png" />
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+         
+
+:::
+::: incremental
+# Parents, Children, Siblings
+
+Parents, children, and siblings describe relations between files and folders. In this folder tree, `red` is a parent of `yellow` and `orange`. `Green` and `purple` are children of `yellow`. `Yellow` and `orange` are siblings. 
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+
+
+
+:::
+::: incremental
+# Visual Studio Code
+
+<img src = "image-3.png" width = "400px" />
+
+**Visual Studio Code** (or VSCode) is an industry-standard **Integrated Development Environment**. It is a lightweight, open-source code editor developed by Microsoft. It supports various programming languages, offers customizable features, extensions, and built-in Git integration for coding and development projects.
+
+VSCode is required for many Computer and Information Science classes here at Allegheny. 
+
+
+
+:::
+::: incremental
+# Basic Commands for File Management
+
+Many command lines take arguments, just like functions in Python. Positiional arguments are listed directly after the command. 
+
+```terminal
+$ mkdir red # makes directory red
+$ cd red # chooses directory red
+$ echo "one" > 1.txt # writes 'one' to file 1.txt, inside red folder
+$ cd .. # chooses parent directory (the path holding path red)
+
+```
+
+> [!NOTE]
+> When example Terminal commands are formatted as above, only the text between `$` and `#` should be typed. `$` indicates a new line and the `#` text is a comment explaining the code. 
+:::
+
+---
+title: "Command Line Files"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Local Development
+
+Local development is computer-programming where the code you write lives on your computer's hard drive. 
+
+In Computer Science 100, we started out doing all of our work in the web browser. While this is a great way to get started coding fast, local development is an important part of computer programming. It allows you to work on multiple files at once, to collaborate with other coders, and to work without an internet connection. It also allows you to version your code in Git so you can go back to different versions of what you've done and reference archived code.
+
+:::
+::: incremental
+# Benefits of Working Locally
+
+- Working with multiple files at once
+- Importing additional code into your project, giving it many more capabilities
+- Saving multiple versions of your code
+- Working offline
+- Working collaboratively 
+- Professionalism
+
+:::
+::: incremental
+# Terminal
+
+<img src = "image.png" width = "450px" />
+
+Also known as the **shell**, **CLI (Command Line Interface)**, or **command prompt**. Terminal is a text-based interface that allows you to interact with your computer's operating sysem. Capabilties include: file management, system configuration etc. 
+
+
+
+:::
+::: incremental
+# Operating System Differences
+
+<img src = "image-1.png" width = "300px" />
+
+Different operating systems (e.g Mac, Windows, Linux) and system configurations mean that the commands that work on your system ma ybe slightly different from those that work on your classmate's or professor's.
+
+For example, some people will use the command `python` to execute Python files, whereas others will use `python3`. 
+
+:::
+::: incremental
+# Gradual Intro to Local Development
+
+Local computer-programming requires you to set up your computer in a special way (a process that is often tedious and will differ from student to student).
+
+For this reason, we will learn to do local development gradually while still doing some assignments on Trinket. You may need help from TLs and/or professor in setting up your computer. 
+
+:::
+::: incremental
+# File Systems
+
+**Folders** (also known as **paths** or **directories**) can hold both files and other folders. A tree metaphor is often used to describe file systems, but a box that holds both objects (files) and other boxes (folders) is another way to think about it.
+
+These are two representations of the same file system. 
+
+<img width = "300px" src = "image-2.png" />
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+         
+
+:::
+::: incremental
+# Parents, Children, Siblings
+
+Parents, children, and siblings describe relations between files and folders. In this folder tree, `red` is a parent of `yellow` and `orange`. `Green` and `purple` are children of `yellow`. `Yellow` and `orange` are siblings. 
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+
+
+
+:::
+::: incremental
+# Visual Studio Code
+
+<img src = "image-3.png" width = "400px" />
+
+**Visual Studio Code** (or VSCode) is an industry-standard **Integrated Development Environment**. It is a lightweight, open-source code editor developed by Microsoft. It supports various programming languages, offers customizable features, extensions, and built-in Git integration for coding and development projects.
+
+VSCode is required for many Computer and Information Science classes here at Allegheny. 
+
+
+
+:::
+::: incremental
+# Basic Commands for File Management
+
+Many command lines take arguments, just like functions in Python. Positiional arguments are listed directly after the command. 
+
+```terminal
+$ mkdir red # makes directory red
+$ cd red # chooses directory red
+$ echo "one" > 1.txt # writes 'one' to file 1.txt, inside red folder
+$ cd .. # chooses parent directory (the path holding path red)
+
+```
+
+> [!NOTE]
+> When example Terminal commands are formatted as above, only the text between `$` and `#` should be typed. `$` indicates a new line and the `#` text is a comment explaining the code. 
+:::
+
+---
+title: "Command Line Files"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Local Development
+
+Local development is computer-programming where the code you write lives on your computer's hard drive. 
+
+In Computer Science 100, we started out doing all of our work in the web browser. While this is a great way to get started coding fast, local development is an important part of computer programming. It allows you to work on multiple files at once, to collaborate with other coders, and to work without an internet connection. It also allows you to version your code in Git so you can go back to different versions of what you've done and reference archived code.
+
+:::
+::: incremental
+# Benefits of Working Locally
+
+- Working with multiple files at once
+- Importing additional code into your project, giving it many more capabilities
+- Saving multiple versions of your code
+- Working offline
+- Working collaboratively 
+- Professionalism
+
+:::
+::: incremental
+# Terminal
+
+<img src = "image.png" width = "450px" />
+
+Also known as the **shell**, **CLI (Command Line Interface)**, or **command prompt**. Terminal is a text-based interface that allows you to interact with your computer's operating sysem. Capabilties include: file management, system configuration etc. 
+
+
+
+:::
+::: incremental
+# Operating System Differences
+
+<img src = "image-1.png" width = "300px" />
+
+Different operating systems (e.g Mac, Windows, Linux) and system configurations mean that the commands that work on your system ma ybe slightly different from those that work on your classmate's or professor's.
+
+For example, some people will use the command `python` to execute Python files, whereas others will use `python3`. 
+
+:::
+::: incremental
+# Gradual Intro to Local Development
+
+Local computer-programming requires you to set up your computer in a special way (a process that is often tedious and will differ from student to student).
+
+For this reason, we will learn to do local development gradually while still doing some assignments on Trinket. You may need help from TLs and/or professor in setting up your computer. 
+
+:::
+::: incremental
+# File Systems
+
+**Folders** (also known as **paths** or **directories**) can hold both files and other folders. A tree metaphor is often used to describe file systems, but a box that holds both objects (files) and other boxes (folders) is another way to think about it.
+
+These are two representations of the same file system. 
+
+<img width = "300px" src = "image-2.png" />
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+         
+
+:::
+::: incremental
+# Parents, Children, Siblings
+
+Parents, children, and siblings describe relations between files and folders. In this folder tree, `red` is a parent of `yellow` and `orange`. `Green` and `purple` are children of `yellow`. `Yellow` and `orange` are siblings. 
+
+```
+└── red
+    ├── yellow
+    │   ├── green
+    │   └── purple
+    └── orange
+```
+
+
+
+:::
+::: incremental
+# Visual Studio Code
+
+<img src = "image-3.png" width = "400px" />
+
+**Visual Studio Code** (or VSCode) is an industry-standard **Integrated Development Environment**. It is a lightweight, open-source code editor developed by Microsoft. It supports various programming languages, offers customizable features, extensions, and built-in Git integration for coding and development projects.
+
+VSCode is required for many Computer and Information Science classes here at Allegheny. 
+
+
+
+:::
+::: incremental
+# Basic Commands for File Management
+
+Many command lines take arguments, just like functions in Python. Positiional arguments are listed directly after the command. 
+
+```terminal
+$ mkdir red # makes directory red
+$ cd red # chooses directory red
+$ echo "one" > 1.txt # writes 'one' to file 1.txt, inside red folder
+$ cd .. # chooses parent directory (the path holding path red)
+
+```
+
+> [!NOTE]
+> When example Terminal commands are formatted as above, only the text between `$` and `#` should be typed. `$` indicates a new line and the `#` text is a comment explaining the code. 
+:::

@@ -1,0 +1,387 @@
+
+---
+title: "Math Functions"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Python Functions
+
+Functions in Python are blocks of reusable code designed to perform a specific task. They can take inputs, perform operations, and return results. Here's an example:
+
+```python  
+def greet(name):  
+   return "Hello " + name + "!"
+
+print(greet("Alice"))  # Output: Hello, Alice!  
+```
+
+We are already familiar with some built-in Python functions like `print()`, `range()`, and `input()`
+
+
+:::
+::: incremental
+# Python Function Syntax
+
+To define a function in Python, use the `def` keyword followed by the function name and parentheses containing any parameters. The function body is indented.
+
+```python
+def <function_name>(parameter1, parameter2):
+    # Function body
+    result = parameter1 + parameter2
+    return result
+```  
+- `def`: Keyword to start function definition.
+- `function_name`: Name of the function.
+- `(parameter1, parameter2)`: Parameters (inputs) the function takes.
+- `return`: Keyword to specify the return value(s) of the function.
+- Indentation: Indicates the scope of the function body.
+
+
+:::
+::: incremental
+# Parameters vs. Arguments
+
+In Python, parameters and arguments are often used interchangeably, but they have distinct meanings:
+
+- **Parameters**: These are variables declared in the function definition. They represent the inputs that the function expects.
+
+- **Arguments**: These are the actual values passed to the function when it is called. They correspond to the parameters defined in the function.
+
+Example:
+
+```python
+def greet(name): # here, name is a parameter
+    return f"Hello, {name}!"
+
+print(greet("Alice")) # Alice is an argument
+```
+
+
+:::
+::: incremental
+# Return Statement
+
+In Python, the `return` statement is used to exit a function and optionally return a value back to the caller.
+
+```python
+def add(a, b):
+    result = a + b
+    return result
+
+sum = add(3, 5)
+print(sum)  # Output: 8
+```
+
+:::
+::: incremental
+# "A Function Of"
+
+When one variable is **a funciton of** another variable, that means we use the first variable to calculate the second. 
+
+<img src = "image.png" width = "550px" />
+
+In this example, the size, color, and shape are all a function of the objects position in the list `i`. This is powerful because it allows one variable to affect many aspects of our canvas. 
+
+[See the code on Trinket](https://trinket.io/glowscript/6edcbd186f)
+
+:::
+::: incremental
+# Velocity
+
+Velocity is a word for _speed_ that specifically denotes distance divided by time.
+
+In VPython, it may be easiest to understand velocity in terms of units per second; however, in our animations, we need to adapt a per-second velocity to match up with our frame rate. ​We can write a function that does this.
+
+```python
+def frameVelocity(velocity, fps):
+  return velocity/fps # return per-frame velocity
+```
+
+See an example of this function working [on Trinket](https://trinket.io/glowscript/c08641882c).
+
+
+:::
+::: incremental
+# Acceleration
+
+Acceleration is the change in velocity over time. It is defined in distance divided by time-squared (e.g. m/s\*\*2).
+
+Let's say you wanted an object with a certain initial (or starting) velocity to come to zero within a certain time frame. You could write a function to calculate the necessary acceleration to make this happen:
+
+```python
+# create acceleration to zero function given initial velocity (in units per second)
+# seconds to stop, and frame rate
+def accelToZero(initial_velocity, seconds_to_zero, fps):
+    acceleration = -initial_velocity/seconds_to_zero # calculate per s^2 accel
+    acceleration /= fps # convert to per frame acceleration
+    return acceleration # return acceleration
+```
+
+See this function in action [on Trinket](https://trinket.io/glowscript/c27ed58711).
+:::
+
+---
+title: "Math Functions"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Python Functions
+
+Functions in Python are blocks of reusable code designed to perform a specific task. They can take inputs, perform operations, and return results. Here's an example:
+
+```python  
+def greet(name):  
+   return "Hello " + name + "!"
+
+print(greet("Alice"))  # Output: Hello, Alice!  
+```
+
+We are already familiar with some built-in Python functions like `print()`, `range()`, and `input()`
+
+
+:::
+::: incremental
+# Python Function Syntax
+
+To define a function in Python, use the `def` keyword followed by the function name and parentheses containing any parameters. The function body is indented.
+
+```python
+def <function_name>(parameter1, parameter2):
+    # Function body
+    result = parameter1 + parameter2
+    return result
+```  
+- `def`: Keyword to start function definition.
+- `function_name`: Name of the function.
+- `(parameter1, parameter2)`: Parameters (inputs) the function takes.
+- `return`: Keyword to specify the return value(s) of the function.
+- Indentation: Indicates the scope of the function body.
+
+
+:::
+::: incremental
+# Parameters vs. Arguments
+
+In Python, parameters and arguments are often used interchangeably, but they have distinct meanings:
+
+- **Parameters**: These are variables declared in the function definition. They represent the inputs that the function expects.
+
+- **Arguments**: These are the actual values passed to the function when it is called. They correspond to the parameters defined in the function.
+
+Example:
+
+```python
+def greet(name): # here, name is a parameter
+    return f"Hello, {name}!"
+
+print(greet("Alice")) # Alice is an argument
+```
+
+
+:::
+::: incremental
+# Return Statement
+
+In Python, the `return` statement is used to exit a function and optionally return a value back to the caller.
+
+```python
+def add(a, b):
+    result = a + b
+    return result
+
+sum = add(3, 5)
+print(sum)  # Output: 8
+```
+
+:::
+::: incremental
+# "A Function Of"
+
+When one variable is **a funciton of** another variable, that means we use the first variable to calculate the second. 
+
+<img src = "image.png" width = "550px" />
+
+In this example, the size, color, and shape are all a function of the objects position in the list `i`. This is powerful because it allows one variable to affect many aspects of our canvas. 
+
+[See the code on Trinket](https://trinket.io/glowscript/6edcbd186f)
+
+:::
+::: incremental
+# Velocity
+
+Velocity is a word for _speed_ that specifically denotes distance divided by time.
+
+In VPython, it may be easiest to understand velocity in terms of units per second; however, in our animations, we need to adapt a per-second velocity to match up with our frame rate. ​We can write a function that does this.
+
+```python
+def frameVelocity(velocity, fps):
+  return velocity/fps # return per-frame velocity
+```
+
+See an example of this function working [on Trinket](https://trinket.io/glowscript/c08641882c).
+
+
+:::
+::: incremental
+# Acceleration
+
+Acceleration is the change in velocity over time. It is defined in distance divided by time-squared (e.g. m/s\*\*2).
+
+Let's say you wanted an object with a certain initial (or starting) velocity to come to zero within a certain time frame. You could write a function to calculate the necessary acceleration to make this happen:
+
+```python
+# create acceleration to zero function given initial velocity (in units per second)
+# seconds to stop, and frame rate
+def accelToZero(initial_velocity, seconds_to_zero, fps):
+    acceleration = -initial_velocity/seconds_to_zero # calculate per s^2 accel
+    acceleration /= fps # convert to per frame acceleration
+    return acceleration # return acceleration
+```
+
+See this function in action [on Trinket](https://trinket.io/glowscript/c27ed58711).
+:::
+
+---
+title: "Math Functions"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Python Functions
+
+Functions in Python are blocks of reusable code designed to perform a specific task. They can take inputs, perform operations, and return results. Here's an example:
+
+```python  
+def greet(name):  
+   return "Hello " + name + "!"
+
+print(greet("Alice"))  # Output: Hello, Alice!  
+```
+
+We are already familiar with some built-in Python functions like `print()`, `range()`, and `input()`
+
+
+:::
+::: incremental
+# Python Function Syntax
+
+To define a function in Python, use the `def` keyword followed by the function name and parentheses containing any parameters. The function body is indented.
+
+```python
+def <function_name>(parameter1, parameter2):
+    # Function body
+    result = parameter1 + parameter2
+    return result
+```  
+- `def`: Keyword to start function definition.
+- `function_name`: Name of the function.
+- `(parameter1, parameter2)`: Parameters (inputs) the function takes.
+- `return`: Keyword to specify the return value(s) of the function.
+- Indentation: Indicates the scope of the function body.
+
+
+:::
+::: incremental
+# Parameters vs. Arguments
+
+In Python, parameters and arguments are often used interchangeably, but they have distinct meanings:
+
+- **Parameters**: These are variables declared in the function definition. They represent the inputs that the function expects.
+
+- **Arguments**: These are the actual values passed to the function when it is called. They correspond to the parameters defined in the function.
+
+Example:
+
+```python
+def greet(name): # here, name is a parameter
+    return f"Hello, {name}!"
+
+print(greet("Alice")) # Alice is an argument
+```
+
+
+:::
+::: incremental
+# Return Statement
+
+In Python, the `return` statement is used to exit a function and optionally return a value back to the caller.
+
+```python
+def add(a, b):
+    result = a + b
+    return result
+
+sum = add(3, 5)
+print(sum)  # Output: 8
+```
+
+:::
+::: incremental
+# "A Function Of"
+
+When one variable is **a funciton of** another variable, that means we use the first variable to calculate the second. 
+
+<img src = "image.png" width = "550px" />
+
+In this example, the size, color, and shape are all a function of the objects position in the list `i`. This is powerful because it allows one variable to affect many aspects of our canvas. 
+
+[See the code on Trinket](https://trinket.io/glowscript/6edcbd186f)
+
+:::
+::: incremental
+# Velocity
+
+Velocity is a word for _speed_ that specifically denotes distance divided by time.
+
+In VPython, it may be easiest to understand velocity in terms of units per second; however, in our animations, we need to adapt a per-second velocity to match up with our frame rate. ​We can write a function that does this.
+
+```python
+def frameVelocity(velocity, fps):
+  return velocity/fps # return per-frame velocity
+```
+
+See an example of this function working [on Trinket](https://trinket.io/glowscript/c08641882c).
+
+
+:::
+::: incremental
+# Acceleration
+
+Acceleration is the change in velocity over time. It is defined in distance divided by time-squared (e.g. m/s\*\*2).
+
+Let's say you wanted an object with a certain initial (or starting) velocity to come to zero within a certain time frame. You could write a function to calculate the necessary acceleration to make this happen:
+
+```python
+# create acceleration to zero function given initial velocity (in units per second)
+# seconds to stop, and frame rate
+def accelToZero(initial_velocity, seconds_to_zero, fps):
+    acceleration = -initial_velocity/seconds_to_zero # calculate per s^2 accel
+    acceleration /= fps # convert to per frame acceleration
+    return acceleration # return acceleration
+```
+
+See this function in action [on Trinket](https://trinket.io/glowscript/c27ed58711).
+:::

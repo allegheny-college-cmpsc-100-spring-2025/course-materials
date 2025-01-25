@@ -1,0 +1,498 @@
+
+---
+title: "Variables Data Types Operations"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Code Comments
+
+- Code comments are text in your code files that Python ignores. 
+- They are excellent for explaning what your code does, and for temporarily silencing code you may not want to delete. 
+- In this class, we will use more comments than a professional would, because erring on the side of over-explaning is a great way to learn. 
+
+
+
+:::
+::: incremental
+# Code Comment Syntax
+
+There are two kinds of Python comments we'll use in this class:
+
+```python
+
+# single line comments, denoted by a hashtag at the start of the line
+
+'''
+
+multiline comments, 
+denoted with ''' or """ at 
+the start and the end of the comment block
+
+'''
+```
+
+:::
+::: incremental
+# Find the MadLib exercise link in Discord!
+
+<img src = "image.png" width = "350px" />
+
+Create a remix of the trinket [linked](https://trinket.io/python/3eaeec768d) in the Discord channel and follow the instructions in the code comments! When you're finished, reply to the Discord thread with your remixed Trinket. Once you've submitted your Trinket, you'll select another student's link from the thread to read to your table. 
+
+**If you can't see our class Discord channel**, make sure you have signed up for Discord and completed the Course Platforms assignment. E-mail the professor your Discord name so they can add you right away. 
+
+
+:::
+::: incremental
+# Variables 
+
+<img src = "image-1.png" width = "350px" />
+
+
+Variables are containers: they can hold a variety of different values. You could imagine a variable as a tea bag, and its value as the kind of tea the bag holds. You steep different teas the same way, but the flavor depens what's in the teabag. 
+
+In Python, variables are assigned using the following syntax:
+
+```
+variable_name = variable_value
+```
+
+Even if you’ve never coded before, you might be familiar with the concept of a variable from taking algebra in school.
+
+
+:::
+::: incremental
+## You can name variables *almost* anything you want!*
+
+It's a good idea to give your variables names that are a happy medium of descriptive and easy to type.
+
+### These two code blocks are the same in effect
+
+```
+clr = "blue"
+print("Imagine a " + clr + " sky")
+```
+
+```
+c = "blue"
+print("Imagine a " + c + " sky")
+```
+You can't start variable names with numbers in Python, and also shouldn't give variables names that already have some function (like int, or in VPython, sphere)
+
+
+:::
+::: incremental
+## Data Types in Python
+
+Variables have different data types. Python assigns the data type of a variable based on its value. These are some common datatypes:
+
+### string
+Strings are text values. If a variable's value is surrounded with `'` or `"`, Python gives data type `string`
+
+```
+pet1 = "dog"
+pet2 = 'cat'
+```
+>[!NOTE]
+> If Python sees a word WITHOUT quotation marks, it will look for a variable with that name. If it doesn't find one, it will throw an error. 
+
+### int
+
+Ints are integer numerical values.  If a variable is assigned number value with no quotes and no decimal point, Python gives it data type `int`.
+
+```
+i = 2
+```
+
+
+### float
+
+Floats are decimal numerical values. If a variable is assigned number value with no quotes and a decimal point, Python gives it data type `float`. 
+
+```
+f = 5.2
+```
+
+
+:::
+::: incremental
+## Math Operations in Python
+
+Python provides a variety of built-in mathematical operations that can be performed on numeric data types, such as integers and floating-point numbers. Some common math operations include:
+
+### Addition
+```python
+result = 3 + 5  # Result will be 8
+```
+
+### Subtraction
+```python
+result = 10 - 3  # Result will be 7
+```
+
+### Multiplication
+```python
+result = 4 * 6  # Result will be 24
+```
+
+### Division
+```python
+result = 15 / 3  # Result will be 5.0 (float)
+```
+
+### Modulo (Remainder)
+```python
+result = 17 % 5  # Result will be 2
+```
+
+### Exponentiation
+```python
+result = 2 ** 3  # Result will be 8
+```
+
+
+:::
+::: incremental
+
+## String Operations in Python
+
+Python also provides various string operations for manipulating and working with text data. Strings can be concatenated, sliced, and formatted in different ways.
+
+### Concatenation
+```python
+str1 = "Hello"
+str2 = "World"
+result = str1 + " " + str2  # Result will be "Hello World"
+```
+
+### String Length
+```python
+text = "Python"
+length = len(text)  # Length will be 6
+```
+
+### String Slicing
+```python
+text = "Python"
+substring = text[0:3]  # Result will be "Pyt"
+```
+
+
+[def]: /variables-data-types-operations/09_asteriskStrNum.md:::
+::: incremental
+## The same operator will sometimes produce different results with different data types
+
+```python
+
+# * with two integers
+result = 3 * 4 # result will by 12
+
+# * with integer and float
+result = 3 * 4.0 # result will be 12.0
+
+# * with integer and str
+result  = "Hey" * 3 # result will be HeyHeyHey
+
+
+```
+
+
+:::
+::: incremental
+## Python reads code blocks top to bottom
+
+```python
+
+n = 5 # assigns var n value 5
+print(n) # output: 5
+n = 7 # reassigns n a new value
+print(n) # output: 7
+n = n + 2 # assigns n a value based on prior value
+print(n) # output: 9
+
+```
+The complete output for the above: 
+
+```
+5
+7
+9
+```
+:::
+::: incremental
+# Technical Leader Office Hours
+
+Want some computer science support? Technical Leaders have office hours every week!  
+You can find these office hours linked in Canvas and on Discord.
+
+![image](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/77f1c9a3-bb56-4f5f-b1a6-d17bd67e8c0a)
+:::
+::: incremental
+# Attendance Prompt
+
+Take a few minutes to find an image of a 3D graphic that has stuck in your memory. Post it in the class Discord Channel (or email me if you can't see the class channel yet).
+
+We will go around the room and each person will talk about why the image they selected is unique or memorable. 
+
+<img src = "https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/90b124e5-da6a-40e4-994d-bafd6eaab8d5" width = "600px">
+
+*image by Jeffrey Stuker*
+
+:::
+
+---
+title: "Variables Data Types Operations"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+# Code Comments
+
+- Code comments are text in your code files that Python ignores. 
+- They are excellent for explaning what your code does, and for temporarily silencing code you may not want to delete. 
+- In this class, we will use more comments than a professional would, because erring on the side of over-explaning is a great way to learn. 
+
+
+
+:::
+::: incremental
+# Code Comment Syntax
+
+There are two kinds of Python comments we'll use in this class:
+
+```python
+
+# single line comments, denoted by a hashtag at the start of the line
+
+'''
+
+multiline comments, 
+denoted with ''' or """ at 
+the start and the end of the comment block
+
+'''
+```
+
+:::
+::: incremental
+# Find the MadLib exercise link in Discord!
+
+<img src = "image.png" width = "350px" />
+
+Create a remix of the trinket [linked](https://trinket.io/python/3eaeec768d) in the Discord channel and follow the instructions in the code comments! When you're finished, reply to the Discord thread with your remixed Trinket. Once you've submitted your Trinket, you'll select another student's link from the thread to read to your table. 
+
+**If you can't see our class Discord channel**, make sure you have signed up for Discord and completed the Course Platforms assignment. E-mail the professor your Discord name so they can add you right away. 
+
+
+:::
+::: incremental
+# Variables 
+
+<img src = "image-1.png" width = "350px" />
+
+
+Variables are containers: they can hold a variety of different values. You could imagine a variable as a tea bag, and its value as the kind of tea the bag holds. You steep different teas the same way, but the flavor depens what's in the teabag. 
+
+In Python, variables are assigned using the following syntax:
+
+```
+variable_name = variable_value
+```
+
+Even if you’ve never coded before, you might be familiar with the concept of a variable from taking algebra in school.
+
+
+:::
+::: incremental
+## You can name variables *almost* anything you want!*
+
+It's a good idea to give your variables names that are a happy medium of descriptive and easy to type.
+
+### These two code blocks are the same in effect
+
+```
+clr = "blue"
+print("Imagine a " + clr + " sky")
+```
+
+```
+c = "blue"
+print("Imagine a " + c + " sky")
+```
+You can't start variable names with numbers in Python, and also shouldn't give variables names that already have some function (like int, or in VPython, sphere)
+
+
+:::
+::: incremental
+## Data Types in Python
+
+Variables have different data types. Python assigns the data type of a variable based on its value. These are some common datatypes:
+
+### string
+Strings are text values. If a variable's value is surrounded with `'` or `"`, Python gives data type `string`
+
+```
+pet1 = "dog"
+pet2 = 'cat'
+```
+>[!NOTE]
+> If Python sees a word WITHOUT quotation marks, it will look for a variable with that name. If it doesn't find one, it will throw an error. 
+
+### int
+
+Ints are integer numerical values.  If a variable is assigned number value with no quotes and no decimal point, Python gives it data type `int`.
+
+```
+i = 2
+```
+
+
+### float
+
+Floats are decimal numerical values. If a variable is assigned number value with no quotes and a decimal point, Python gives it data type `float`. 
+
+```
+f = 5.2
+```
+
+
+:::
+::: incremental
+## Math Operations in Python
+
+Python provides a variety of built-in mathematical operations that can be performed on numeric data types, such as integers and floating-point numbers. Some common math operations include:
+
+### Addition
+```python
+result = 3 + 5  # Result will be 8
+```
+
+### Subtraction
+```python
+result = 10 - 3  # Result will be 7
+```
+
+### Multiplication
+```python
+result = 4 * 6  # Result will be 24
+```
+
+### Division
+```python
+result = 15 / 3  # Result will be 5.0 (float)
+```
+
+### Modulo (Remainder)
+```python
+result = 17 % 5  # Result will be 2
+```
+
+### Exponentiation
+```python
+result = 2 ** 3  # Result will be 8
+```
+
+
+:::
+::: incremental
+
+## String Operations in Python
+
+Python also provides various string operations for manipulating and working with text data. Strings can be concatenated, sliced, and formatted in different ways.
+
+### Concatenation
+```python
+str1 = "Hello"
+str2 = "World"
+result = str1 + " " + str2  # Result will be "Hello World"
+```
+
+### String Length
+```python
+text = "Python"
+length = len(text)  # Length will be 6
+```
+
+### String Slicing
+```python
+text = "Python"
+substring = text[0:3]  # Result will be "Pyt"
+```
+
+
+[def]: /variables-data-types-operations/09_asteriskStrNum.md:::
+::: incremental
+## The same operator will sometimes produce different results with different data types
+
+```python
+
+# * with two integers
+result = 3 * 4 # result will by 12
+
+# * with integer and float
+result = 3 * 4.0 # result will be 12.0
+
+# * with integer and str
+result  = "Hey" * 3 # result will be HeyHeyHey
+
+
+```
+
+
+:::
+::: incremental
+## Python reads code blocks top to bottom
+
+```python
+
+n = 5 # assigns var n value 5
+print(n) # output: 5
+n = 7 # reassigns n a new value
+print(n) # output: 7
+n = n + 2 # assigns n a value based on prior value
+print(n) # output: 9
+
+```
+The complete output for the above: 
+
+```
+5
+7
+9
+```
+:::
+::: incremental
+# Technical Leader Office Hours
+
+Want some computer science support? Technical Leaders have office hours every week!  
+You can find these office hours linked in Canvas and on Discord.
+
+![image](https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/77f1c9a3-bb56-4f5f-b1a6-d17bd67e8c0a)
+:::
+::: incremental
+# Attendance Prompt
+
+Take a few minutes to find an image of a 3D graphic that has stuck in your memory. Post it in the class Discord Channel (or email me if you can't see the class channel yet).
+
+We will go around the room and each person will talk about why the image they selected is unique or memorable. 
+
+<img src = "https://github.com/allegheny-college-cmpsc-100-spring-2024/slides/assets/8368413/90b124e5-da6a-40e4-994d-bafd6eaab8d5" width = "600px">
+
+*image by Jeffrey Stuker*
+
+:::

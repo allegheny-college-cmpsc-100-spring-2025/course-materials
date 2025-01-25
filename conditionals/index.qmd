@@ -1,0 +1,332 @@
+
+---
+title: "Conditionals"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+## Introduction to If Statements in Python
+
+In Python, `if` statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.
+
+```python
+# Example of an if statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
+```
+This example will print "x is greater than 5" because the condition `x > 5` evaluates to `True`.
+
+
+
+
+
+
+
+
+:::
+::: incremental
+## If-Else Statements in Python
+
+In Python, `if-else` statements allow you to execute different blocks of code based on whether a condition is true or false.
+
+```python
+# Example of an if-else statement
+x = 3
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+```
+
+In this example, since `x` is not greater than 5, the code block under the `else` statement will be executed, printing "x is not greater than 5".
+
+
+
+
+
+
+
+:::
+::: incremental
+# If Statement in VPython
+
+<img src = "image.png" width = "450px" />
+
+```python
+# i is equal to 0 then 1 then 2.... then 8
+for i in range(9):
+  x = i * 2 - 8 # x pos var as function of i
+  # draw ring and position with x
+  r = ring(pos = vector(x, 0, 0)) 
+  if i > 5: # if i > 5, color ring yellow
+    r.color = vector(1, 1, 0)
+```
+
+[Click here](https://trinket.io/glowscript/02a8eee925) for Trinket. 
+
+:::
+::: incremental
+# If-else in VPython
+
+<img src = "image-1.png" width = "450px" />
+
+This example adds an else statement to the last one. 
+
+[See the code on Trinket](https://trinket.io/glowscript/63ebdf1288):::
+
+---
+title: "Conditionals"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+## Introduction to If Statements in Python
+
+In Python, `if` statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.
+
+```python
+# Example of an if statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
+```
+This example will print "x is greater than 5" because the condition `x > 5` evaluates to `True`.
+
+
+
+
+
+
+
+
+:::
+::: incremental
+## If-Else Statements in Python
+
+In Python, `if-else` statements allow you to execute different blocks of code based on whether a condition is true or false.
+
+```python
+# Example of an if-else statement
+x = 3
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+```
+
+In this example, since `x` is not greater than 5, the code block under the `else` statement will be executed, printing "x is not greater than 5".
+
+
+
+
+
+
+
+:::
+::: incremental
+# If Statement in VPython
+
+<img src = "image.png" width = "450px" />
+
+```python
+# i is equal to 0 then 1 then 2.... then 8
+for i in range(9):
+  x = i * 2 - 8 # x pos var as function of i
+  # draw ring and position with x
+  r = ring(pos = vector(x, 0, 0)) 
+  if i > 5: # if i > 5, color ring yellow
+    r.color = vector(1, 1, 0)
+```
+
+[Click here](https://trinket.io/glowscript/02a8eee925) for Trinket. 
+
+:::
+::: incremental
+# If-else in VPython
+
+<img src = "image-1.png" width = "450px" />
+
+This example adds an else statement to the last one. 
+
+[See the code on Trinket](https://trinket.io/glowscript/63ebdf1288):::
+
+---
+title: "Conditionals"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+## Introduction to If Statements in Python
+
+In Python, `if` statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.
+
+```python
+# Example of an if statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
+```
+This example will print "x is greater than 5" because the condition `x > 5` evaluates to `True`.
+
+
+
+
+
+
+
+
+:::
+::: incremental
+## If-Else Statements in Python
+
+In Python, `if-else` statements allow you to execute different blocks of code based on whether a condition is true or false.
+
+```python
+# Example of an if-else statement
+x = 3
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+```
+
+In this example, since `x` is not greater than 5, the code block under the `else` statement will be executed, printing "x is not greater than 5".
+
+
+
+
+
+
+
+:::
+::: incremental
+# If Statement in VPython
+
+<img src = "image.png" width = "450px" />
+
+```python
+# i is equal to 0 then 1 then 2.... then 8
+for i in range(9):
+  x = i * 2 - 8 # x pos var as function of i
+  # draw ring and position with x
+  r = ring(pos = vector(x, 0, 0)) 
+  if i > 5: # if i > 5, color ring yellow
+    r.color = vector(1, 1, 0)
+```
+
+[Click here](https://trinket.io/glowscript/02a8eee925) for Trinket. 
+
+:::
+::: incremental
+# If-else in VPython
+
+<img src = "image-1.png" width = "450px" />
+
+This example adds an else statement to the last one. 
+
+[See the code on Trinket](https://trinket.io/glowscript/63ebdf1288):::
+
+---
+title: "Conditionals"
+subtitle: "CMPSC 100: Computational Expression, Spring 2025"
+author: "Morgan Green"
+slide-number: true
+format:
+  revealjs: 
+    theme: [dark, ../custom.scss]
+touch: true
+controls: true
+---
+
+::: incremental
+## Introduction to If Statements in Python
+
+In Python, `if` statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.
+
+```python
+# Example of an if statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
+```
+This example will print "x is greater than 5" because the condition `x > 5` evaluates to `True`.
+
+
+
+
+
+
+
+
+:::
+::: incremental
+## If-Else Statements in Python
+
+In Python, `if-else` statements allow you to execute different blocks of code based on whether a condition is true or false.
+
+```python
+# Example of an if-else statement
+x = 3
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+```
+
+In this example, since `x` is not greater than 5, the code block under the `else` statement will be executed, printing "x is not greater than 5".
+
+
+
+
+
+
+
+:::
+::: incremental
+# If Statement in VPython
+
+<img src = "image.png" width = "450px" />
+
+```python
+# i is equal to 0 then 1 then 2.... then 8
+for i in range(9):
+  x = i * 2 - 8 # x pos var as function of i
+  # draw ring and position with x
+  r = ring(pos = vector(x, 0, 0)) 
+  if i > 5: # if i > 5, color ring yellow
+    r.color = vector(1, 1, 0)
+```
+
+[Click here](https://trinket.io/glowscript/02a8eee925) for Trinket. 
+
+:::
+::: incremental
+# If-else in VPython
+
+<img src = "image-1.png" width = "450px" />
+
+This example adds an else statement to the last one. 
+
+[See the code on Trinket](https://trinket.io/glowscript/63ebdf1288):::
