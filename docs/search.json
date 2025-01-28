@@ -42,6 +42,13 @@
     "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
   },
   {
+    "objectID": "vpython-shapes-and-colors/index.html#vpython-colors-coded",
+    "href": "vpython-shapes-and-colors/index.html#vpython-colors-coded",
+    "title": "Vpython Shapes And Colors",
+    "section": "VPython Colors Coded",
+    "text": "VPython Colors Coded\n# colors encoded in 256 color RBG format\n# (a format very commonly found online)\nr256 = 0\ng256 = 163\nb256 = 108\n\n#convert from 256 color scheme to 0-1\nr1 = r256/255\ng1 = g256/255\nb1 = b256/255\n\nt = pyramid() #draw pyramid\n# color pyramid using converted colors\nt.color = vector(r1, g1, b1)"
+  },
+  {
     "objectID": "variables-data-types-operations.html#data-types",
     "href": "variables-data-types-operations.html#data-types",
     "title": "Variables, Data Types, and Operations",

@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-4e8384abd884a3c91878870a5bdbd0e3.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -177,7 +242,6 @@ In Trinket, errors show up at the bottom of the screen. Sometimes they will show
 <img data-src="image-4.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p><p>VPython shapes are deployed through a special Python datatype called a <code>class</code>. We will learn more about classes toward the end of the semester.</p>
 <p>For now, you just need to make sure your syntax and punctuation are consistent with what’s demonstrated.</p>
 <p>See <a href="https://trinket.io/glowscript/dfa8dc7476">this example</a>.</p>
-<p><a href="../vpython-shapes-and-colors/06_vpythonColors.md">-&gt; VPython Colors</a></p>
 </section>
 
 <section id="vpython-colors" class="title-slide slide level1 incremental center">
@@ -185,176 +249,35 @@ In Trinket, errors show up at the bottom of the screen. Sometimes they will show
 <p>Like VPython coordinates, VPython colors are assignmed using vectors.</p>
 <p>Instead of the vector values standing for <code>(x, y, z)</code> they stand for <code>(Red, Green, Blue)</code>.</p>
 <p>Each one has a value between 0 and 1, so pure red would be <code>vector(1, 0, 0)</code> and pure blue is <code>vector(0, 0, 1)</code></p>
-<p>You can convert color values from 256 RGB color encoding (easily found online) as follows:</p>
-<pre><code>#colors encoded in 256 color RBG format
-#(a format very commonly found online)
-r256 =  &nbsp;&nbsp;&nbsp;0
-g256 = 163
-b256 = 108
-
-#convert from 256 color scheme to 0-1
-r1 = r256/255
-g1 = g256/255
-b1 = b256/255
-
-t = pyramid() #draw pyramid
-#color pyramid using converted colors
-t.color = vector(r1, g1, b1)</code></pre>
+<p>You can convert color values from 256 RGB color encoding (easily found online)</p>
 </section>
 
-<div>
-<section id="color-resources" class="title-slide slide level1 center">
+<section id="vpython-colors-coded" class="slide level2 incremental">
+<h2>VPython Colors Coded</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># colors encoded in 256 color RBG format</span></span>
+<span id="cb2-2"><a></a><span class="co"># (a format very commonly found online)</span></span>
+<span id="cb2-3"><a></a>r256 <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-4"><a></a>g256 <span class="op">=</span> <span class="dv">163</span></span>
+<span id="cb2-5"><a></a>b256 <span class="op">=</span> <span class="dv">108</span></span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a><span class="co">#convert from 256 color scheme to 0-1</span></span>
+<span id="cb2-8"><a></a>r1 <span class="op">=</span> r256<span class="op">/</span><span class="dv">255</span></span>
+<span id="cb2-9"><a></a>g1 <span class="op">=</span> g256<span class="op">/</span><span class="dv">255</span></span>
+<span id="cb2-10"><a></a>b1 <span class="op">=</span> b256<span class="op">/</span><span class="dv">255</span></span>
+<span id="cb2-11"><a></a></span>
+<span id="cb2-12"><a></a>t <span class="op">=</span> pyramid() <span class="co">#draw pyramid</span></span>
+<span id="cb2-13"><a></a><span class="co"># color pyramid using converted colors</span></span>
+<span id="cb2-14"><a></a>t.color <span class="op">=</span> vector(r1, g1, b1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="color-resources" class="title-slide slide level1 incremental center">
 <h1>Color Resources</h1>
 <p>There are a lot of fun free color resources available online, where you can find RGB encoded colors for converting in VPython.</p>
 
-<img src="image-5.png" width="600px" class="r-stretch"><p>Resource links: <a href="https://pteromys.melonisland.net/munsell/">Munsell Color Palette</a>, <a href="https://color.adobe.com/create/color-wheel">Adobe Color</a>:::</p>
+<img src="image-5.png" width="600px" class="r-stretch"><p>Resource links: <a href="https://pteromys.melonisland.net/munsell/">Munsell Color Palette</a>, <a href="https://color.adobe.com/create/color-wheel">Adobe Color</a></p>
 </section>
 
-<section id="console-1" class="title-slide slide level1 incremental center">
-<h1>Console</h1>
-
-<img data-src="image.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p><p>The console is where you can see the text output of your code.</p>
-<p>In a plain Python Trinket, the console is to the right of the code editor.</p>
-<p>In a VPython Trinket, the console is to the right of the code editor and beneath the Canvas.</p>
-</section>
-
-<section id="errors-1" class="title-slide slide level1 incremental center">
-<h1>Errors</h1>
-
-<img data-src="image-7.png" class="r-stretch"><p>If your code isn’t working, Python will give you a clue about the problem by displaying an <strong>error</strong>.<br>
-In Trinket, errors show up at the bottom of the screen. Sometimes they will show a line #, other times they unfortunately will not.</p>
-<p><a href="../vpython-shapes-and-colors/03_builtInPythonFunctions.md">-&gt; Built In Python Functions</a></p>
-</section>
-
-<section id="built-in-python-functions-1" class="title-slide slide level1 incremental center">
-<h1>Built-In Python Functions</h1>
-<p>We will learn more about functions later on in the semester, but for now you just need to know a little bit about what a function is and how to call it.</p>
-<p>A function is a block of code that has been packaged under a single name for convenient access. You can deploy that block of code simply by <strong>calling</strong> the function’s name.</p>
-<p>Functions we’ve used in class so far include <code>print()</code> which prints text to the console and <code>str()</code>, which converts values to the string datatype.</p>
-</section>
-
-<section id="function-calling-syntax-1" class="title-slide slide level1 incremental center">
-<h1>Function Calling Syntax</h1>
-<p>A function call will always consist of the name of the function, followed by open and close parens <code>()</code>.</p>
-<p>Many functions receive inputs, known as <strong>arguments.</strong> When you are feeding a function arguments, you put them <strong>between</strong> the open and close parens: <code>(&lt;arguments&gt;)</code>.</p>
-<p>For example, the print function requires some text for it to print. So to print hello world, you would type:</p>
-<pre><code>print("Hello world!")</code></pre>
-<p><a href="../vpython-shapes-and-colors/05_vpythonShapes.md">-&gt; VPython Shapes</a></p>
-</section>
-
-<section id="vpython-shapes-1" class="title-slide slide level1 incremental center">
-<h1>VPython Shapes</h1>
-
-<img data-src="image-4.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p><p>VPython shapes are deployed through a special Python datatype called a <code>class</code>. We will learn more about classes toward the end of the semester.</p>
-<p>For now, you just need to make sure your syntax and punctuation are consistent with what’s demonstrated.</p>
-<p>See <a href="https://trinket.io/glowscript/dfa8dc7476">this example</a>.</p>
-<p><a href="../vpython-shapes-and-colors/06_vpythonColors.md">-&gt; VPython Colors</a></p>
-</section>
-
-<section id="vpython-colors-1" class="title-slide slide level1 incremental center">
-<h1>VPython Colors</h1>
-<p>Like VPython coordinates, VPython colors are assignmed using vectors.</p>
-<p>Instead of the vector values standing for <code>(x, y, z)</code> they stand for <code>(Red, Green, Blue)</code>.</p>
-<p>Each one has a value between 0 and 1, so pure red would be <code>vector(1, 0, 0)</code> and pure blue is <code>vector(0, 0, 1)</code></p>
-<p>You can convert color values from 256 RGB color encoding (easily found online) as follows:</p>
-<pre><code>#colors encoded in 256 color RBG format
-#(a format very commonly found online)
-r256 =  &nbsp;&nbsp;&nbsp;0
-g256 = 163
-b256 = 108
-
-#convert from 256 color scheme to 0-1
-r1 = r256/255
-g1 = g256/255
-b1 = b256/255
-
-t = pyramid() #draw pyramid
-#color pyramid using converted colors
-t.color = vector(r1, g1, b1)</code></pre>
-</section>
-
-<div>
-<section id="color-resources-1" class="title-slide slide level1 center">
-<h1>Color Resources</h1>
-<p>There are a lot of fun free color resources available online, where you can find RGB encoded colors for converting in VPython.</p>
-
-<img src="image-5.png" width="600px" class="r-stretch"><p>Resource links: <a href="https://pteromys.melonisland.net/munsell/">Munsell Color Palette</a>, <a href="https://color.adobe.com/create/color-wheel">Adobe Color</a>:::</p>
-</section>
-
-<section id="console-2" class="title-slide slide level1 incremental center">
-<h1>Console</h1>
-
-<img data-src="image.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p><p>The console is where you can see the text output of your code.</p>
-<p>In a plain Python Trinket, the console is to the right of the code editor.</p>
-<p>In a VPython Trinket, the console is to the right of the code editor and beneath the Canvas.</p>
-</section>
-
-<section id="errors-2" class="title-slide slide level1 incremental center">
-<h1>Errors</h1>
-
-<img data-src="image-7.png" class="r-stretch"><p>If your code isn’t working, Python will give you a clue about the problem by displaying an <strong>error</strong>.<br>
-In Trinket, errors show up at the bottom of the screen. Sometimes they will show a line #, other times they unfortunately will not.</p>
-<p><a href="../vpython-shapes-and-colors/03_builtInPythonFunctions.md">-&gt; Built In Python Functions</a></p>
-</section>
-
-<section id="built-in-python-functions-2" class="title-slide slide level1 incremental center">
-<h1>Built-In Python Functions</h1>
-<p>We will learn more about functions later on in the semester, but for now you just need to know a little bit about what a function is and how to call it.</p>
-<p>A function is a block of code that has been packaged under a single name for convenient access. You can deploy that block of code simply by <strong>calling</strong> the function’s name.</p>
-<p>Functions we’ve used in class so far include <code>print()</code> which prints text to the console and <code>str()</code>, which converts values to the string datatype.</p>
-</section>
-
-<section id="function-calling-syntax-2" class="title-slide slide level1 incremental center">
-<h1>Function Calling Syntax</h1>
-<p>A function call will always consist of the name of the function, followed by open and close parens <code>()</code>.</p>
-<p>Many functions receive inputs, known as <strong>arguments.</strong> When you are feeding a function arguments, you put them <strong>between</strong> the open and close parens: <code>(&lt;arguments&gt;)</code>.</p>
-<p>For example, the print function requires some text for it to print. So to print hello world, you would type:</p>
-<pre><code>print("Hello world!")</code></pre>
-<p><a href="../vpython-shapes-and-colors/05_vpythonShapes.md">-&gt; VPython Shapes</a></p>
-</section>
-
-<section id="vpython-shapes-2" class="title-slide slide level1 incremental center">
-<h1>VPython Shapes</h1>
-
-<img data-src="image-4.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p><p>VPython shapes are deployed through a special Python datatype called a <code>class</code>. We will learn more about classes toward the end of the semester.</p>
-<p>For now, you just need to make sure your syntax and punctuation are consistent with what’s demonstrated.</p>
-<p>See <a href="https://trinket.io/glowscript/dfa8dc7476">this example</a>.</p>
-<p><a href="../vpython-shapes-and-colors/06_vpythonColors.md">-&gt; VPython Colors</a></p>
-</section>
-
-<section id="vpython-colors-2" class="title-slide slide level1 incremental center">
-<h1>VPython Colors</h1>
-<p>Like VPython coordinates, VPython colors are assignmed using vectors.</p>
-<p>Instead of the vector values standing for <code>(x, y, z)</code> they stand for <code>(Red, Green, Blue)</code>.</p>
-<p>Each one has a value between 0 and 1, so pure red would be <code>vector(1, 0, 0)</code> and pure blue is <code>vector(0, 0, 1)</code></p>
-<p>You can convert color values from 256 RGB color encoding (easily found online) as follows:</p>
-<pre><code>#colors encoded in 256 color RBG format
-#(a format very commonly found online)
-r256 =  &nbsp;&nbsp;&nbsp;0
-g256 = 163
-b256 = 108
-
-#convert from 256 color scheme to 0-1
-r1 = r256/255
-g1 = g256/255
-b1 = b256/255
-
-t = pyramid() #draw pyramid
-#color pyramid using converted colors
-t.color = vector(r1, g1, b1)</code></pre>
-</section>
-
-<section id="color-resources-2" class="title-slide slide level1 incremental center">
-<h1>Color Resources</h1>
-<p>There are a lot of fun free color resources available online, where you can find RGB encoded colors for converting in VPython.</p>
-
-<img src="image-5.png" width="600px" class="r-stretch"><p>Resource links: <a href="https://pteromys.melonisland.net/munsell/">Munsell Color Palette</a>, <a href="https://color.adobe.com/create/color-wheel">Adobe Color</a>:::</p>
 
 
-</section>
-
-</div>
-</div>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
