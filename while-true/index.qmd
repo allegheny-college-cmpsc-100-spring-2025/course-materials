@@ -16,7 +16,8 @@ controls: true
 
 When you call a variable's name, Python substitutes the variable for the value it holds.
 
-THIS CODE
+
+<br>
 
 ```
 name = "Ron Cole"
@@ -24,19 +25,18 @@ print("Hi " + name + "!")
 print("Bye " + name + "!")
 
 ```
-
+<br>
 produces the same reults as 
+
+<br>
 
 ```
 print("Hi Ron Cole!")
 print("Bye Ron Cole!")
 ```
+<br>
+However the first code block is more powerful and flexible. See [this demo](https://trinket.io/python/8d6dd97818) 
 
-EXCEPT THAT in the first version, you can change the name in the first line and it will affect the next two lines, whereas with the second, if you wanted to change the name, you would have to do it twice.
-
-This might not seem like a big deal when you only have to change two lines of code, but it's a much bigger deal if you have to change 1000...
-
-See [this demo](https://trinket.io/python/8d6dd97818), and imagine what it would be like if you had to change every line each time you adapted your code to address is new person.
 
 
 :::
@@ -76,7 +76,7 @@ There is no fourth row because afer the third loop, the loop's condition is no l
 
 :::
 ::: incremental
-# While Loops Review in VPython
+# While Loops in VPython
 
 <img src = "image-1.png" width = "500px">
 
@@ -87,7 +87,7 @@ We can apply these same concepts in VPython. [Click here](https://trinket.io/glo
 ::: incremental
 # VPython Animations with While Loops
 
-Another way to use while-loops is to create animations in VPython.
+Another way to use while-loops is to create animations in VPython. <br><br>
 
 ```
 b = box(pos = vector(-5, 0, 0))
@@ -95,6 +95,7 @@ while b.pos.x < 5:
     rate(10)
     b.pos.x += 0.1
 ```
+<br>
 
 This code moves box b 0.1 units to the right every 1/10 of a second until it gets to position 5. [See it on Trinket.](https://trinket.io/glowscript/f7d68bb49b)
 
@@ -103,24 +104,23 @@ This code moves box b 0.1 units to the right every 1/10 of a second until it get
 # Rate
 
 The `rate()` function in VPython tells Python how many frames per second your animation should run.
-
-So:
-
+<br><br>
 ```
 rate(10) # 10 frames per second, a good default
-rate(100) # 100 frames per second, may be too fast for comfort
+rate(100) # 100 frames per second, may be too fast 
 rate(0.5) # half a famer per second, good for testing in slow mo
 ```
+<br>
 If you don't include a `rate()` function in your animation, in won't run properly, and might crash you browser. 
 
 :::
 ::: incremental
 # while True
 
-If you want your animation to run continously, you can use `while True:`, a condition which is always true. 
-
+If you want your animation to run continously, you can use `while True:` a condition which is always true.
+<br><br>
 This is an exception to the no-infinity rule. It is okay to run an infinite loop in this case, because it will include a `rate()` function. This function causes Python to pause periodically as the program runs, so it doesn't get overwhelmed. 
-
+<br><br>
 Other time functions like `sleep()` can have the same effect. 
 
 :::
