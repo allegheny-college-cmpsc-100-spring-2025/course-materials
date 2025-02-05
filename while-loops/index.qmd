@@ -10,6 +10,17 @@ format:
 touch: true
 controls: true
 ---
+::: incremental
+
+# If you are sick, stay home!
+
+Reminder: if you are sick, stay home. If you are healthy and well, come to class.
+
+The attendance policy in this class is designed to accommodate a typical amount of illness, and you can always talk to the professor about extenuating circumstances.
+
+You should stay home especially if you are feverish, coughing, sneezing, or have a sore throat. If you are recovering from these symptoms, it is a good idea to weara mask. 
+
+:::
 
 ::: incremental
 # Boolean Expressions in Python
