@@ -1,6 +1,6 @@
 
 ---
-title: "Lists For Loops"
+title: "Lists and For Loops"
 subtitle: "CMPSC 100: Computational Expression, Spring 2025"
 author: "Morgan Green"
 slide-number: true
@@ -11,49 +11,31 @@ touch: true
 controls: true
 ---
 
-::: incremental
 # Lists
 
 Lists in Python are ordered collections of items. They are mutable, versatile, and can contain elements of different types.
 
 Lists are written between square brackets `[]`, with elements separated by commas:
 
-```
-# color names stored as a list of strings called colors
-
+```python
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-
-# even numbers stored as a lit of integers called even_numbers
 
 even_numbers = [2, 4, 6, 8, 10]
 ```
 
 
-:::
-::: incremental
 # List Indices
 
 To get an item in a list you call its **index**, by naming the list and then putting the index between square brackets.
 
 The index of the first item in a list is always 0. The last item is the length of the list less one.
 
-```
-# color names stored as a list of strings called colors
-
+```python
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 
 colors[0] # red
-colors[1] # orange
-colors[2] # yellow
-colors[3] # green
-colors[4] # blue
-colors[5] # purple
-
 ```
 
-
-:::
-::: incremental
 # Range
 
 The build-in `range()` function in Python creates a sequential list of numbers.
@@ -62,14 +44,17 @@ The build-in `range()` function in Python creates a sequential list of numbers.
 
 `range(a, b)` produces a list from `a` to `b - 1`
 
-```
+<br>
+
+```python
 range(5) # [0, 1, 2, 3, 4]
 range(5, 15) # [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 ```
 
+# Ranges and Indices
 Putting this together with the concepts from previous slides:
 
-```
+```python
 nums = range(5) # [0, 1, 2, 3, 4]
 nums[2] # 2
 
@@ -78,327 +63,32 @@ lst[2] # 3
 ```
 
 
-:::
-::: incremental
 # For Loop
+
+<br>
 
 A `for-loop` is another type of loop in python, which runs one time for each item in a list. The code below outputs 0-9 to the console.
 
-```
+<br>
+
+```python
 for i in range(10):
 	print(i)
 ```
 
-The syntax above are as follows:
+# For Loop Syntax
 
-```
+
+```python
 for <var> in <list>:
 	# do something with <var>
 ```
 
-Where `<var>` is the name of the variable that will contain the value of current element in the list, and `<list>` is the name of the list you are iterating through.   
+<br>
+
+Where `<var>` is the name of the variable that will contain the value of current element in the list, and `<list>` is the name of the list you are iterating through.  
+
+<br>
+
 Note that in examples like this, when you swap in your code you get rid of the angle brackets `<>.`
-:::
 
----
-title: "Lists For Loops"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# Lists
-
-Lists in Python are ordered collections of items. They are mutable, versatile, and can contain elements of different types.
-
-Lists are written between square brackets `[]`, with elements separated by commas:
-
-```
-# color names stored as a list of strings called colors
-
-colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-
-# even numbers stored as a lit of integers called even_numbers
-
-even_numbers = [2, 4, 6, 8, 10]
-```
-
-
-:::
-::: incremental
-# List Indices
-
-To get an item in a list you call its **index**, by naming the list and then putting the index between square brackets.
-
-The index of the first item in a list is always 0. The last item is the length of the list less one.
-
-```
-# color names stored as a list of strings called colors
-
-colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-
-colors[0] # red
-colors[1] # orange
-colors[2] # yellow
-colors[3] # green
-colors[4] # blue
-colors[5] # purple
-
-```
-
-
-:::
-::: incremental
-# Range
-
-The build-in `range()` function in Python creates a sequential list of numbers.
-
-`range(n)` produces a list from `0` to `n - 1`
-
-`range(a, b)` produces a list from `a` to `b - 1`
-
-```
-range(5) # [0, 1, 2, 3, 4]
-range(5, 15) # [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-```
-
-Putting this together with the concepts from previous slides:
-
-```
-nums = range(5) # [0, 1, 2, 3, 4]
-nums[2] # 2
-
-lst = range(1, 6) # [1, 2, 3, 4, 5]
-lst[2] # 3
-```
-
-
-:::
-::: incremental
-# For Loop
-
-A `for-loop` is another type of loop in python, which runs one time for each item in a list. The code below outputs 0-9 to the console.
-
-```
-for i in range(10):
-	print(i)
-```
-
-The syntax above are as follows:
-
-```
-for <var> in <list>:
-	# do something with <var>
-```
-
-Where `<var>` is the name of the variable that will contain the value of current element in the list, and `<list>` is the name of the list you are iterating through.   
-Note that in examples like this, when you swap in your code you get rid of the angle brackets `<>.`
-:::
-
----
-title: "Lists For Loops"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# Lists
-
-Lists in Python are ordered collections of items. They are mutable, versatile, and can contain elements of different types.
-
-Lists are written between square brackets `[]`, with elements separated by commas:
-
-```
-# color names stored as a list of strings called colors
-
-colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-
-# even numbers stored as a lit of integers called even_numbers
-
-even_numbers = [2, 4, 6, 8, 10]
-```
-
-
-:::
-::: incremental
-# List Indices
-
-To get an item in a list you call its **index**, by naming the list and then putting the index between square brackets.
-
-The index of the first item in a list is always 0. The last item is the length of the list less one.
-
-```
-# color names stored as a list of strings called colors
-
-colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-
-colors[0] # red
-colors[1] # orange
-colors[2] # yellow
-colors[3] # green
-colors[4] # blue
-colors[5] # purple
-
-```
-
-
-:::
-::: incremental
-# Range
-
-The build-in `range()` function in Python creates a sequential list of numbers.
-
-`range(n)` produces a list from `0` to `n - 1`
-
-`range(a, b)` produces a list from `a` to `b - 1`
-
-```
-range(5) # [0, 1, 2, 3, 4]
-range(5, 15) # [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-```
-
-Putting this together with the concepts from previous slides:
-
-```
-nums = range(5) # [0, 1, 2, 3, 4]
-nums[2] # 2
-
-lst = range(1, 6) # [1, 2, 3, 4, 5]
-lst[2] # 3
-```
-
-
-:::
-::: incremental
-# For Loop
-
-A `for-loop` is another type of loop in python, which runs one time for each item in a list. The code below outputs 0-9 to the console.
-
-```
-for i in range(10):
-	print(i)
-```
-
-The syntax above are as follows:
-
-```
-for <var> in <list>:
-	# do something with <var>
-```
-
-Where `<var>` is the name of the variable that will contain the value of current element in the list, and `<list>` is the name of the list you are iterating through.   
-Note that in examples like this, when you swap in your code you get rid of the angle brackets `<>.`
-:::
-
----
-title: "Lists For Loops"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# Lists
-
-Lists in Python are ordered collections of items. They are mutable, versatile, and can contain elements of different types.
-
-Lists are written between square brackets `[]`, with elements separated by commas:
-
-```
-# color names stored as a list of strings called colors
-
-colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-
-# even numbers stored as a lit of integers called even_numbers
-
-even_numbers = [2, 4, 6, 8, 10]
-```
-
-
-:::
-::: incremental
-# List Indices
-
-To get an item in a list you call its **index**, by naming the list and then putting the index between square brackets.
-
-The index of the first item in a list is always 0. The last item is the length of the list less one.
-
-```
-# color names stored as a list of strings called colors
-
-colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-
-colors[0] # red
-colors[1] # orange
-colors[2] # yellow
-colors[3] # green
-colors[4] # blue
-colors[5] # purple
-
-```
-
-
-:::
-::: incremental
-# Range
-
-The build-in `range()` function in Python creates a sequential list of numbers.
-
-`range(n)` produces a list from `0` to `n - 1`
-
-`range(a, b)` produces a list from `a` to `b - 1`
-
-```
-range(5) # [0, 1, 2, 3, 4]
-range(5, 15) # [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-```
-
-Putting this together with the concepts from previous slides:
-
-```
-nums = range(5) # [0, 1, 2, 3, 4]
-nums[2] # 2
-
-lst = range(1, 6) # [1, 2, 3, 4, 5]
-lst[2] # 3
-```
-
-
-:::
-::: incremental
-# For Loop
-
-A `for-loop` is another type of loop in python, which runs one time for each item in a list. The code below outputs 0-9 to the console.
-
-```
-for i in range(10):
-	print(i)
-```
-
-The syntax above are as follows:
-
-```
-for <var> in <list>:
-	# do something with <var>
-```
-
-Where `<var>` is the name of the variable that will contain the value of current element in the list, and `<list>` is the name of the list you are iterating through.   
-Note that in examples like this, when you swap in your code you get rid of the angle brackets `<>.`
-:::
