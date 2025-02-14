@@ -18,13 +18,12 @@ In computer programming, the same problem often has many solutions.
 
 These two blocks of code are effectively the same:
 
-```
+``` {.python code-line-numbers="false"}
 for i in range(5):
     print(i)
 ```
-
-```
-i = 0
+<br/>
+``` {.python code-line-numbers="false"}
 while i < 5:
     print(i)
     i = i + 1
@@ -36,7 +35,7 @@ while i < 5:
 
 You can use lists in VPython to store a group of shapes. 
 
-```
+``` {.python code-line-numbers="false"}
 # creates a list of three shapes
 shapes = [sphere(), box(), pyramid()] 
 shapes[0].pos.x = -3 # moves first shape in list to left
@@ -49,7 +48,7 @@ shapes[2].pos.x = 3 # moves last shape in list to right
 
 When elements are stored in a list, you can perform the same operation easily on each of them with a for loop. 
 
-```
+``` {.python code-line-numbers="false"}
 # ... CONTINUES CODE FROM PREVIOUS SLIDE
 for shp in shapes:
     shp.color = vector(1, 0, 0)
@@ -58,11 +57,11 @@ for shp in shapes:
 
 :::
 ::: incremental
-# Append Function
+# `append()` Function
 
 The `append()` function in Python adds an item to the end of a list. 
 
-```
+``` {.python code-line-numbers="false"} 
 nums = [] # creates an empty list and stores it in variable nums
 nums.append(5) # appends 5 to list
 nums.append(3) # appends 3 to list
@@ -72,9 +71,9 @@ print(nums) # outputs [5, 3]
 
 :::
 ::: incremental
-# Using Append in VPython
+# Using `append()` in VPython
 
-![Alt text](image-1.png)
+![](image-1.png)
 
 You can use the `append()` function to add shapes to a list that you can later iterate through with a for-loop. 
 
@@ -82,11 +81,13 @@ You can use the `append()` function to add shapes to a list that you can later i
 
 :::
 ::: incremental
-# Len Function
+# `len()` Function
 
 The `len()` function returns the number of items in a list when the argument is a list datatype. It returns the number of characters in a string if the argument is a string datatype. 
 
-```
+<br>
+
+``` {.python code-line-numbers="false"} 
 len("cat") # returns 3
 len([0, 1, 2, 3, 4]) # returns 5
 
@@ -96,7 +97,7 @@ len([0, 1, 2, 3, 4]) # returns 5
 ::: incremental
 # Using the len() function to get list position
 
-![Alt text](image-2.png)
+![](image-2.png)
 
 If you want to iterate through a list AND use the current position of the list, the `len()` function can help you do it. 
 
@@ -105,235 +106,11 @@ If you want to iterate through a list AND use the current position of the list, 
 ::: incremental
 # Feel free to experiment! 
 
-![Alt text](image.png)
+![](image.png)
 
 Remember you can make a remix of any Trinket demo I post and change the code to see what happens! Trything things out is a low-risk way to learn.
 
-You can also use the copy button to make a new copy of finished assignments and experiment with them. 
-:::
-
----
-title: "Lists For Loops Contd"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# While-loops and For Loops
-
-In computer programming, the same problem often has many solutions. 
-
-These two blocks of code are effectively the same:
-
-```
-for i in range(5):
-    print(i)
-```
-
-```
-i = 0
-while i < 5:
-    print(i)
-    i = i + 1
-```
-
-:::
-::: incremental
-# Lists in VPython
-
-You can use lists in VPython to store a group of shapes. 
-
-```
-# creates a list of three shapes
-shapes = [sphere(), box(), pyramid()] 
-shapes[0].pos.x = -3 # moves first shape in list to left
-shapes[2].pos.x = 3 # moves last shape in list to right
-```
-
-:::
-::: incremental
-# For Loops in VPython
-
-When elements are stored in a list, you can perform the same operation easily on each of them with a for loop. 
-
-```
-# ... CONTINUES CODE FROM PREVIOUS SLIDE
-for shp in shapes:
-    shp.color = vector(1, 0, 0)
-```
-[See it on Trinket](https://trinket.io/glowscript/4e86225d48)
-
-:::
-::: incremental
-# Append Function
-
-The `append()` function in Python adds an item to the end of a list. 
-
-```
-nums = [] # creates an empty list and stores it in variable nums
-nums.append(5) # appends 5 to list
-nums.append(3) # appends 3 to list
-print(nums) # outputs [5, 3]
-```
-[See it on trinket](https://trinket.io/python/ab64a511f8). 
-
-:::
-::: incremental
-# Using Append in VPython
-
-![Alt text](image-1.png)
-
-You can use the `append()` function to add shapes to a list that you can later iterate through with a for-loop. 
-
-[See example on Trinket.](https://trinket.io/glowscript/6fd60699df)
-
-:::
-::: incremental
-# Len Function
-
-The `len()` function returns the number of items in a list when the argument is a list datatype. It returns the number of characters in a string if the argument is a string datatype. 
-
-```
-len("cat") # returns 3
-len([0, 1, 2, 3, 4]) # returns 5
-
-```
-
-:::
-::: incremental
-# Using the len() function to get list position
-
-![Alt text](image-2.png)
-
-If you want to iterate through a list AND use the current position of the list, the `len()` function can help you do it. 
-
-[This example](https://trinket.io/glowscript/45b1bfbf80) modifies an earlier, getting the index of the current earth  to determine the angle of rotation. This means each earth rotates at a different speed. 
-:::
-::: incremental
-# Feel free to experiment! 
-
-![Alt text](image.png)
-
-Remember you can make a remix of any Trinket demo I post and change the code to see what happens! Trything things out is a low-risk way to learn.
-
-You can also use the copy button to make a new copy of finished assignments and experiment with them. 
-:::
-
----
-title: "Lists For Loops Contd"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# While-loops and For Loops
-
-In computer programming, the same problem often has many solutions. 
-
-These two blocks of code are effectively the same:
-
-```
-for i in range(5):
-    print(i)
-```
-
-```
-i = 0
-while i < 5:
-    print(i)
-    i = i + 1
-```
-
-:::
-::: incremental
-# Lists in VPython
-
-You can use lists in VPython to store a group of shapes. 
-
-```
-# creates a list of three shapes
-shapes = [sphere(), box(), pyramid()] 
-shapes[0].pos.x = -3 # moves first shape in list to left
-shapes[2].pos.x = 3 # moves last shape in list to right
-```
-
-:::
-::: incremental
-# For Loops in VPython
-
-When elements are stored in a list, you can perform the same operation easily on each of them with a for loop. 
-
-```
-# ... CONTINUES CODE FROM PREVIOUS SLIDE
-for shp in shapes:
-    shp.color = vector(1, 0, 0)
-```
-[See it on Trinket](https://trinket.io/glowscript/4e86225d48)
-
-:::
-::: incremental
-# Append Function
-
-The `append()` function in Python adds an item to the end of a list. 
-
-```
-nums = [] # creates an empty list and stores it in variable nums
-nums.append(5) # appends 5 to list
-nums.append(3) # appends 3 to list
-print(nums) # outputs [5, 3]
-```
-[See it on trinket](https://trinket.io/python/ab64a511f8). 
-
-:::
-::: incremental
-# Using Append in VPython
-
-![Alt text](image-1.png)
-
-You can use the `append()` function to add shapes to a list that you can later iterate through with a for-loop. 
-
-[See example on Trinket.](https://trinket.io/glowscript/6fd60699df)
-
-:::
-::: incremental
-# Len Function
-
-The `len()` function returns the number of items in a list when the argument is a list datatype. It returns the number of characters in a string if the argument is a string datatype. 
-
-```
-len("cat") # returns 3
-len([0, 1, 2, 3, 4]) # returns 5
-
-```
-
-:::
-::: incremental
-# Using the len() function to get list position
-
-![Alt text](image-2.png)
-
-If you want to iterate through a list AND use the current position of the list, the `len()` function can help you do it. 
-
-[This example](https://trinket.io/glowscript/45b1bfbf80) modifies an earlier, getting the index of the current earth  to determine the angle of rotation. This means each earth rotates at a different speed. 
-:::
-::: incremental
-# Feel free to experiment! 
-
-![Alt text](image.png)
-
-Remember you can make a remix of any Trinket demo I post and change the code to see what happens! Trything things out is a low-risk way to learn.
+<br/>
 
 You can also use the copy button to make a new copy of finished assignments and experiment with them. 
 :::
