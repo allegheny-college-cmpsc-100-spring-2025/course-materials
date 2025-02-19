@@ -116,56 +116,14 @@
     "href": "conditionals/index.html#introduction-to-if-statements-in-python",
     "title": "Conditionals",
     "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
+    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\n\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
   },
   {
     "objectID": "conditionals/index.html#if-else-statements-in-python",
     "href": "conditionals/index.html#if-else-statements-in-python",
     "title": "Conditionals",
     "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-1",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-1",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-1",
-    "href": "conditionals/index.html#if-else-statements-in-python-1",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-2",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-2",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-2",
-    "href": "conditionals/index.html#if-else-statements-in-python-2",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-3",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-3",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-3",
-    "href": "conditionals/index.html#if-else-statements-in-python-3",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
+    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\n\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
   },
   {
     "objectID": "test/index.html",
