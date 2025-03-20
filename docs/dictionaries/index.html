@@ -204,26 +204,31 @@ Morgan Green
 </div>
 
 </section>
-<section>
-<section id="dictionaries-welcome-activity" class="title-slide slide level1 incremental center">
-<h1>Dictionaries | Welcome Activity</h1>
-<p>Use <a href="https://trinket.io/python/22232e8cdf">this link</a> to respond to ANY of the following prompts (you don’t need to do all of them). You can answer questions in the Discord thread or verbally in class.</p>
-<p>As you try things out, feel free to post your remixed trinkets in the Discord thread.</p>
-<ul>
-<li>What happens when you change the numbers on line 9?</li>
-<li>What happens when you change <code>"Sally"</code> to a different name?</li>
-<li>The value of <code>myCar</code>is a dictionary data type. Can you guess what the <code>{}</code>, <code>:</code>, and <code>,</code> do when you declare a dictionary?</li>
-<li>How can you remove the name text from the animation?</li>
-</ul>
+<section class="slide level2">
+
+<!--
+::: incremental
+# Dictionaries | Welcome Activity
+
+Use [this link](https://trinket.io/python/22232e8cdf) to respond to ANY of the following prompts (you don't need to do all of them). You can answer questions in the Discord thread or verbally in class. 
+
+As you try things out, feel free to post your remixed trinkets in the Discord thread. 
+
+- What happens when you change the numbers on line 9?
+- What happens when you change `"Sally"` to a different name? 
+- The value of `myCar`is a dictionary data type. Can you guess what the `{}`, `:`, and `,` do when you declare a dictionary? 
+- How can you remove the name text from the animation?
+
+## Seeds for future learning
+
+The starter code includes `import` (lines 5-6) and some new string manipulations (line 17, 21). We will cover these topics in more detail in later classes. 
+
+:::
+-->
 </section>
-<section id="seeds-for-future-learning" class="slide level2">
-<h2>Seeds for future learning</h2>
-<p>The starter code includes <code>import</code> (lines 5-6) and some new string manipulations (line 17, 21). We will cover these topics in more detail in later classes.</p>
-</section></section>
 <section id="python-dictionaries" class="title-slide slide level1 incremental center">
 <h1>Python Dictionaries</h1>
-<p>Dictionaries in Python are unordered collections of key-value pairs. They are mutable and versatile data structures, allowing for efficient lookup, insertion, and deletion operations. Keys must be unique and immutable, while values can be of any data type.</p>
-<p>Example:</p>
+<p>Dictionaries in Python are unordered collections of key-value pairs. They are mutable and versatile data structures, allowing for efficient lookup, insertion, and deletion operations. Keys must be unique and immutable, while values can be of any data type. <br> Example:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co"># Creating a dictionary</span></span>
 <span id="cb1-2"><a></a>my_dict <span class="op">=</span> {<span class="st">'apple'</span>: <span class="dv">5</span>, <span class="st">'banana'</span>: <span class="dv">7</span>, <span class="st">'orange'</span>: <span class="dv">3</span>}</span>
 <span id="cb1-3"><a></a></span>
@@ -234,27 +239,21 @@ Morgan Green
 <span id="cb1-8"><a></a>my_dict[<span class="st">'apple'</span>] <span class="op">=</span> <span class="dv">8</span></span>
 <span id="cb1-9"><a></a></span>
 <span id="cb1-10"><a></a><span class="co"># Adding new key-value pairs</span></span>
-<span id="cb1-11"><a></a>my_dict[<span class="st">'grape'</span>] <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb1-12"><a></a></span>
-<span id="cb1-13"><a></a><span class="co"># Removing a key-value pair</span></span>
-<span id="cb1-14"><a></a><span class="kw">del</span> my_dict[<span class="st">'orange'</span>]</span>
-<span id="cb1-15"><a></a></span>
-<span id="cb1-16"><a></a><span class="co"># Iterating over keys</span></span>
-<span id="cb1-17"><a></a><span class="cf">for</span> key <span class="kw">in</span> my_dict:</span>
-<span id="cb1-18"><a></a>    <span class="bu">print</span>(key, my_dict[key])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a></a>my_dict[<span class="st">'grape'</span>] <span class="op">=</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
-<section>
 <section id="understanding-keys-and-values-in-python-dictionaries" class="title-slide slide level1 incremental center">
 <h1>Understanding Keys and Values in Python Dictionaries</h1>
 <p>In Python dictionaries, keys and values play crucial roles in organizing and accessing data efficiently.</p>
 </section>
-<section id="keys" class="slide level2">
-<h2>Keys</h2>
+
+<section id="keys" class="title-slide slide level1 incremental center">
+<h1>Keys</h1>
 <p>Keys are the immutable (meaning stable and unchanging) names for values within a Python dictionary.</p>
 <p><strong>Keys must be unique</strong> within a dictionary; duplicate keys are not allowed.</p>
 </section>
-<section id="values" class="slide level2">
+
+<section id="values" class="slide level2 incremental">
 <h2>Values</h2>
 <p>Dictionary values are…</p>
 <ul>
@@ -262,7 +261,7 @@ Morgan Green
 <li><strong>mutable</strong>: Unlike keys, values can be mutable or immutable. This allows for storing and accessing dynamic data structures within a dictionary.</li>
 <li><strong>accessed with keys</strong>: Values are accessed using their corresponding keys, providing a fast and efficient way to retrieve information from a dictionary.</li>
 </ul>
-</section></section>
+</section>
 <section id="accessing-values-in-python-dictionaries" class="title-slide slide level1 incremental center">
 <h1>Accessing Values in Python Dictionaries</h1>
 <p>Dictionaries in Python provide efficient ways to access values using keys. You can access a value by naming the dictionary and immediatly following, naming the key between two hard brackets:</p>
@@ -279,12 +278,12 @@ Morgan Green
 <section id="adding-and-modifying-keys-and-values" class="title-slide slide level1 incremental center">
 <h1>Adding and Modifying Keys and Values</h1>
 <p>You can modify or add key-value pairs to a dictionary with the following syntax:</p>
-<p>dict[key] = val</p>
+<p><code>dict[key] = val</code></p>
 <p>For example:</p>
-<pre><code>fruit = {} # initialize an empty dictionary
-fruit["apples"] = 8 # updated value {"apples": 8}
-fruit["grapes"] = 20 # updated value {"apples": 8, "grapes": 20}
-fruit["apples"] = 4 # {"apples": 4, "grapes": 20}</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>fruit <span class="op">=</span> {} <span class="co"># initialize an empty dictionary</span></span>
+<span id="cb3-2"><a></a>fruit[<span class="st">"apples"</span>] <span class="op">=</span> <span class="dv">8</span> <span class="co"># updated value {"apples": 8}</span></span>
+<span id="cb3-3"><a></a>fruit[<span class="st">"grapes"</span>] <span class="op">=</span> <span class="dv">20</span> <span class="co"># updated value {"apples": 8, "grapes": 20}</span></span>
+<span id="cb3-4"><a></a>fruit[<span class="st">"apples"</span>] <span class="op">=</span> <span class="dv">4</span> <span class="co"># {"apples": 4, "grapes": 20}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="dictionaries-vs-lists" class="title-slide slide level1 incremental center">
