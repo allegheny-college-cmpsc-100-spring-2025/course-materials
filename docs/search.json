@@ -186,14 +186,14 @@
     "href": "conditionals/index.html#introduction-to-if-statements-in-python",
     "title": "Conditionals",
     "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
+    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\n\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
   },
   {
     "objectID": "conditionals/index.html#if-else-statements-in-python",
     "href": "conditionals/index.html#if-else-statements-in-python",
     "title": "Conditionals",
     "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
+    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\n\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
   },
   {
     "objectID": "qm.html#explanation",
@@ -287,20 +287,6 @@
     "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
   },
   {
-    "objectID": "dictionaries/index.html#seeds-for-future-learning",
-    "href": "dictionaries/index.html#seeds-for-future-learning",
-    "title": "Dictionaries",
-    "section": "Seeds for future learning",
-    "text": "Seeds for future learning\nThe starter code includes import (lines 5-6) and some new string manipulations (line 17, 21). We will cover these topics in more detail in later classes."
-  },
-  {
-    "objectID": "dictionaries/index.html#keys",
-    "href": "dictionaries/index.html#keys",
-    "title": "Dictionaries",
-    "section": "Keys",
-    "text": "Keys\nKeys are the immutable (meaning stable and unchanging) names for values within a Python dictionary.\nKeys must be unique within a dictionary; duplicate keys are not allowed."
-  },
-  {
     "objectID": "dictionaries/index.html#values",
     "href": "dictionaries/index.html#values",
     "title": "Dictionaries",
@@ -327,47 +313,5 @@
     "title": "Reminders",
     "section": "A Quick Reminder",
     "text": "A Quick Reminder\nNo lab tomorrow!"
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-1",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-1",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-1",
-    "href": "conditionals/index.html#if-else-statements-in-python-1",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-2",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-2",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-2",
-    "href": "conditionals/index.html#if-else-statements-in-python-2",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-3",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-3",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-3",
-    "href": "conditionals/index.html#if-else-statements-in-python-3",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
   }
 ]
