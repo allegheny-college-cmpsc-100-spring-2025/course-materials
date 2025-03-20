@@ -1,0 +1,26 @@
+---
+title: "Rube Goldberg example"
+format: html
+css: rube-goldberg/rg.css
+---
+
+    <div class="iframe-container">
+        <iframe id = "topleft" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <iframe id = "topright" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>     
+        <iframe id = "bottomleft" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <iframe id = "bottomright" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+<script>
+    // remove trinket branding from iframes
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+	//link = eval(iframe.id);
+	link = "https://trinket.io/glowscript/26c2c5dcff98";
+	// format from https://trinket.io/glowscript/05142cbbddef to https://trinket.io/embed/glowscript/05142cbbddef?outputOnly=true&start=result
+	link = link.replace("https://trinket.io/glowscript/", "https://trinket.io/embed/glowscript/");
+	link = link + "?outputOnly=true&start=result";
+	iframe.src = link;
+    });
+
+</script>
+

@@ -1,241 +1,31 @@
 [
   {
-    "objectID": "dictionaries/index.html#seeds-for-future-learning",
-    "href": "dictionaries/index.html#seeds-for-future-learning",
-    "title": "Dictionaries",
-    "section": "Seeds for future learning",
-    "text": "Seeds for future learning\nThe starter code includes import (lines 5-6) and some new string manipulations (line 17, 21). We will cover these topics in more detail in later classes."
-  },
-  {
-    "objectID": "dictionaries/index.html#keys",
-    "href": "dictionaries/index.html#keys",
-    "title": "Dictionaries",
-    "section": "Keys",
-    "text": "Keys\nKeys are the immutable (meaning stable and unchanging) names for values within a Python dictionary.\nKeys must be unique within a dictionary; duplicate keys are not allowed."
-  },
-  {
-    "objectID": "dictionaries/index.html#values",
-    "href": "dictionaries/index.html#values",
-    "title": "Dictionaries",
-    "section": "Values",
-    "text": "Values\nDictionary values are…\n\nflexible: They can be of any data type, including integers, floats, strings, lists, tuples, dictionaries, or even custom objects.\nmutable: Unlike keys, values can be mutable or immutable. This allows for storing and accessing dynamic data structures within a dictionary.\naccessed with keys: Values are accessed using their corresponding keys, providing a fast and efficient way to retrieve information from a dictionary."
-  },
-  {
-    "objectID": "classes-methods/index.html#explanation",
-    "href": "classes-methods/index.html#explanation",
-    "title": "Classes Methods",
-    "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket\n-&gt; Self Parameter"
-  },
-  {
-    "objectID": "classes-methods/index.html#explanation-1",
-    "href": "classes-methods/index.html#explanation-1",
-    "title": "Classes Methods",
-    "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
-  },
-  {
-    "objectID": "classes-methods/index.html#explanation-2",
-    "href": "classes-methods/index.html#explanation-2",
-    "title": "Classes Methods",
-    "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
-  },
-  {
-    "objectID": "vpython-shapes-and-colors/index.html#vpython-colors-coded",
-    "href": "vpython-shapes-and-colors/index.html#vpython-colors-coded",
-    "title": "Vpython Shapes And Colors",
-    "section": "VPython Colors Coded",
-    "text": "VPython Colors Coded\n# colors encoded in 256 color RBG format\n# (a format very commonly found online)\nr256 = 0\ng256 = 163\nb256 = 108\n\n#convert from 256 color scheme to 0-1\nr1 = r256/255\ng1 = g256/255\nb1 = b256/255\n\nt = pyramid() #draw pyramid\n# color pyramid using converted colors\nt.color = vector(r1, g1, b1)"
-  },
-  {
-    "objectID": "variables-data-types-operations.html#data-types",
-    "href": "variables-data-types-operations.html#data-types",
-    "title": "Variables, Data Types, and Operations",
-    "section": "Data Types",
-    "text": "Data Types\nData types are the kinds of values that variables can hold. The data type of a value affects what you can do with it."
-  },
-  {
-    "objectID": "variables-data-types-operations.html#string-data-type",
-    "href": "variables-data-types-operations.html#string-data-type",
-    "title": "Variables, Data Types, and Operations",
-    "section": "String Data Type",
-    "text": "String Data Type\nStrings are text values. If a variable’s value is surrounded with ' or \", Python gives data type string\npet1 = \"dog\"\npet2 = 'cat'\nIf Python sees a word without quotes, it will look for a a variable with that name. If it can’t find one, it will throw an error."
-  },
-  {
-    "objectID": "variables-data-types-operations.html#numerical-data-types",
-    "href": "variables-data-types-operations.html#numerical-data-types",
-    "title": "Variables, Data Types, and Operations",
-    "section": "Numerical Data Types",
-    "text": "Numerical Data Types\nint\nInts are integer numerical values. If a variable is assigned number value with no quotes and no decimal point, Python gives it data type int.\ni = 2\nfloat\nFloats are decimal numerical values. If a variable is assigned number value with no quotes and a decimal point, Python gives it data type float.\nf = 5.2"
-  },
-  {
-    "objectID": "variables-data-types-operations.html#math-operations-in-python",
-    "href": "variables-data-types-operations.html#math-operations-in-python",
-    "title": "Variables, Data Types, and Operations",
-    "section": "Math Operations in Python",
-    "text": "Math Operations in Python\nPython provides a variety of built-in mathematical operations that can be performed on numeric data types, such as integers and floating-point numbers. Some common math operations include:\nAddition\nresult = 3 + 5  # Result will be 8\nSubtraction\nresult = 10 - 3  # Result will be 7\nMultiplication\nresult = 4 * 6  # Result will be 24\nDivision\nresult = 15 / 3  # Result will be 5.0 (float)\nModulo (Remainder)\nresult = 17 % 5  # Result will be 2\nExponentiation\nresult = 2 ** 3  # Result will be 8"
-  },
-  {
-    "objectID": "variables-data-types-operations.html#string-operations-in-python",
-    "href": "variables-data-types-operations.html#string-operations-in-python",
-    "title": "Variables, Data Types, and Operations",
-    "section": "String Operations in Python",
-    "text": "String Operations in Python\nPython also provides various string operations for manipulating and working with text data. Strings can be concatenated, sliced, and formatted in different ways.\nConcatenation\nstr1 = \"Hello\"\nstr2 = \"World\"\nresult = str1 + \" \" + str2  # Result will be \"Hello World\"\nString Length\ntext = \"Python\"\nlength = len(text)  # Length will be 6\nString Slicing\ntext = \"Python\"\nsubstring = text[0:3]  # Result will be \"Pyt\""
-  },
-  {
-    "objectID": "variables-data-types-operations.html#you-can-name-variables-almost-anything-you-want",
-    "href": "variables-data-types-operations.html#you-can-name-variables-almost-anything-you-want",
-    "title": "Variables, Data Types, and Operations",
-    "section": "You can name variables almost anything you want!*",
-    "text": "You can name variables almost anything you want!*\nIt’s a good idea to give your variables names that are a happy medium of descriptive and easy to type.\nThese two code blocks are the same in effect\nclr = \"blue\"\nprint(\"Imagine a \" + clr + \" sky\")\nc = \"blue\"\nprint(\"Imagine a \" + c + \" sky\")\nYou can’t start variable names with numbers in Python, and also shouldn’t give variables names that already have some function (like int, or in VPython, sphere)"
-  },
-  {
-    "objectID": "variables-data-types-operations.html#python-reads-code-blocks-top-to-bottom",
-    "href": "variables-data-types-operations.html#python-reads-code-blocks-top-to-bottom",
-    "title": "Variables, Data Types, and Operations",
-    "section": "Python reads code blocks top to bottom",
-    "text": "Python reads code blocks top to bottom\n\nn = 5 # assigns var n value 5\nprint(n) # output: 5\nn = 7 # reassigns n a new value\nprint(n) # output: 7\nn = n + 2 # assigns n a value based on prior value\nprint(n) # output: 9\nThe complete output for the above:\n5\n7\n9"
-  },
-  {
-    "objectID": "qm.html#explanation",
-    "href": "qm.html#explanation",
-    "title": "My Slide Deck",
-    "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket\n-&gt; Self Parameter"
-  },
-  {
-    "objectID": "qm.html#explanation-1",
-    "href": "qm.html#explanation-1",
-    "title": "My Slide Deck",
-    "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket\n-&gt; Self Parameter"
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python",
-    "href": "conditionals/index.html#if-else-statements-in-python",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-1",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-1",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-1",
-    "href": "conditionals/index.html#if-else-statements-in-python-1",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-2",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-2",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-2",
-    "href": "conditionals/index.html#if-else-statements-in-python-2",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-3",
-    "href": "conditionals/index.html#introduction-to-if-statements-in-python-3",
-    "title": "Conditionals",
-    "section": "Introduction to If Statements in Python",
-    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
-  },
-  {
-    "objectID": "conditionals/index.html#if-else-statements-in-python-3",
-    "href": "conditionals/index.html#if-else-statements-in-python-3",
-    "title": "Conditionals",
-    "section": "If-Else Statements in Python",
-    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
-  },
-  {
-    "objectID": "test/index.html",
-    "href": "test/index.html",
-    "title": "Computational Expression",
+    "objectID": "rube-goldberg/index.html",
+    "href": "rube-goldberg/index.html",
+    "title": "Rube Goldberg example",
     "section": "",
-    "text": "test indexing"
+    "text": "&lt;div class=\"iframe-container\"&gt;\n    &lt;iframe id = \"topleft\" src=\"\" width=\"100%\" height=\"400\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" allowfullscreen&gt;&lt;/iframe&gt;\n    &lt;iframe id = \"topright\" src=\"\" width=\"100%\" height=\"400\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" allowfullscreen&gt;&lt;/iframe&gt;     \n    &lt;iframe id = \"bottomleft\" src=\"\" width=\"100%\" height=\"400\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" allowfullscreen&gt;&lt;/iframe&gt;\n    &lt;iframe id = \"bottomright\" src=\"\" width=\"100%\" height=\"400\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" allowfullscreen&gt;&lt;/iframe&gt;\n&lt;/div&gt;"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Computational Expression",
-    "section": "",
-    "text": "About 100: Week 1 Slides\nVariables, Datatypes, and Operations"
+    "objectID": "about-100/index.html#another-header",
+    "href": "about-100/index.html#another-header",
+    "title": "About 100",
+    "section": "another header",
+    "text": "another header\na smaller header\nDocuments that end with .md (like this one!) will render as markdown. It is a lightweight markup system that allows you to format text professionally.\nIn this class, you’ll be expected to edit markdown files. Instructions will also be provided in this format."
   },
   {
-    "objectID": "index.html#lecture-content",
-    "href": "index.html#lecture-content",
-    "title": "Computational Expression",
-    "section": "",
-    "text": "About 100: Week 1 Slides\nVariables, Datatypes, and Operations"
+    "objectID": "about-100/index.html#when-i-call-you-tell-us",
+    "href": "about-100/index.html#when-i-call-you-tell-us",
+    "title": "About 100",
+    "section": "When I call you, tell us…",
+    "text": "When I call you, tell us…\n\nWhatever name you prefer to be called\nYour pronouns, if you want to\nDescription of a time a computer or piece of software has messed up or failed you! OR a time when software has helped you a lot.\nYour preferred name again."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "local-python/index.html#relative-paths",
-    "href": "local-python/index.html#relative-paths",
-    "title": "Local Python",
-    "section": "Relative Paths",
-    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
-  },
-  {
-    "objectID": "local-python/index.html#absolute-paths",
-    "href": "local-python/index.html#absolute-paths",
-    "title": "Local Python",
-    "section": "Absolute Paths",
-    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
-  },
-  {
-    "objectID": "local-python/index.html#relative-paths-1",
-    "href": "local-python/index.html#relative-paths-1",
-    "title": "Local Python",
-    "section": "Relative Paths",
-    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
-  },
-  {
-    "objectID": "local-python/index.html#absolute-paths-1",
-    "href": "local-python/index.html#absolute-paths-1",
-    "title": "Local Python",
-    "section": "Absolute Paths",
-    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
-  },
-  {
-    "objectID": "local-python/index.html#relative-paths-2",
-    "href": "local-python/index.html#relative-paths-2",
-    "title": "Local Python",
-    "section": "Relative Paths",
-    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
-  },
-  {
-    "objectID": "local-python/index.html#absolute-paths-2",
-    "href": "local-python/index.html#absolute-paths-2",
-    "title": "Local Python",
-    "section": "Absolute Paths",
-    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
+    "objectID": "about-100/index.html#request",
+    "href": "about-100/index.html#request",
+    "title": "About 100",
+    "section": "Request!",
+    "text": "Request!\nPlease sit in the same spot for the first couple weeks of class while I am learning everyone’s name. (It will take me a little time.)"
   },
   {
     "objectID": "variables-data-types-operations/index.html#you-can-name-variables-almost-anything-you-want",
@@ -322,25 +112,200 @@
     "text": "Python reads code blocks top to bottom\n\nn = 5 # assigns var n value 5\nprint(n) # output: 5\nn = 7 # reassigns n a new value\nprint(n) # output: 7\nn = n + 2 # assigns n a value based on prior value\nprint(n) # output: 9\nThe complete output for the above:\n5\n7\n9"
   },
   {
-    "objectID": "about-100/index.html#another-header",
-    "href": "about-100/index.html#another-header",
-    "title": "About 100",
-    "section": "another header",
-    "text": "another header\na smaller header\nDocuments that end with .md (like this one!) will render as markdown. It is a lightweight markup system that allows you to format text professionally.\nIn this class, you’ll be expected to edit markdown files. Instructions will also be provided in this format."
+    "objectID": "local-python/index.html#relative-paths",
+    "href": "local-python/index.html#relative-paths",
+    "title": "Local Python",
+    "section": "Relative Paths",
+    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
   },
   {
-    "objectID": "about-100/index.html#when-i-call-you-tell-us",
-    "href": "about-100/index.html#when-i-call-you-tell-us",
-    "title": "About 100",
-    "section": "When I call you, tell us…",
-    "text": "When I call you, tell us…\n\nWhatever name you prefer to be called\nYour pronouns, if you want to\nDescription of a time a computer or piece of software has messed up or failed you! OR a time when software has helped you a lot.\nYour preferred name again."
+    "objectID": "local-python/index.html#absolute-paths",
+    "href": "local-python/index.html#absolute-paths",
+    "title": "Local Python",
+    "section": "Absolute Paths",
+    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
   },
   {
-    "objectID": "about-100/index.html#request",
-    "href": "about-100/index.html#request",
-    "title": "About 100",
-    "section": "Request!",
-    "text": "Request!\nPlease sit in the same spot for the first couple weeks of class while I am learning everyone’s name. (It will take me a little time.)"
+    "objectID": "local-python/index.html#relative-paths-1",
+    "href": "local-python/index.html#relative-paths-1",
+    "title": "Local Python",
+    "section": "Relative Paths",
+    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
+  },
+  {
+    "objectID": "local-python/index.html#absolute-paths-1",
+    "href": "local-python/index.html#absolute-paths-1",
+    "title": "Local Python",
+    "section": "Absolute Paths",
+    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
+  },
+  {
+    "objectID": "local-python/index.html#relative-paths-2",
+    "href": "local-python/index.html#relative-paths-2",
+    "title": "Local Python",
+    "section": "Relative Paths",
+    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
+  },
+  {
+    "objectID": "local-python/index.html#absolute-paths-2",
+    "href": "local-python/index.html#absolute-paths-2",
+    "title": "Local Python",
+    "section": "Absolute Paths",
+    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Computational Expression",
+    "section": "",
+    "text": "About 100: Week 1 Slides\nVariables, Datatypes, and Operations"
+  },
+  {
+    "objectID": "index.html#lecture-content",
+    "href": "index.html#lecture-content",
+    "title": "Computational Expression",
+    "section": "",
+    "text": "About 100: Week 1 Slides\nVariables, Datatypes, and Operations"
+  },
+  {
+    "objectID": "test/index.html",
+    "href": "test/index.html",
+    "title": "Computational Expression",
+    "section": "",
+    "text": "test indexing"
+  },
+  {
+    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python",
+    "href": "conditionals/index.html#introduction-to-if-statements-in-python",
+    "title": "Conditionals",
+    "section": "Introduction to If Statements in Python",
+    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
+  },
+  {
+    "objectID": "conditionals/index.html#if-else-statements-in-python",
+    "href": "conditionals/index.html#if-else-statements-in-python",
+    "title": "Conditionals",
+    "section": "If-Else Statements in Python",
+    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
+  },
+  {
+    "objectID": "qm.html#explanation",
+    "href": "qm.html#explanation",
+    "title": "My Slide Deck",
+    "section": "Explanation",
+    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket\n-&gt; Self Parameter"
+  },
+  {
+    "objectID": "qm.html#explanation-1",
+    "href": "qm.html#explanation-1",
+    "title": "My Slide Deck",
+    "section": "Explanation",
+    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket\n-&gt; Self Parameter"
+  },
+  {
+    "objectID": "variables-data-types-operations.html#data-types",
+    "href": "variables-data-types-operations.html#data-types",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Data Types",
+    "text": "Data Types\nData types are the kinds of values that variables can hold. The data type of a value affects what you can do with it."
+  },
+  {
+    "objectID": "variables-data-types-operations.html#string-data-type",
+    "href": "variables-data-types-operations.html#string-data-type",
+    "title": "Variables, Data Types, and Operations",
+    "section": "String Data Type",
+    "text": "String Data Type\nStrings are text values. If a variable’s value is surrounded with ' or \", Python gives data type string\npet1 = \"dog\"\npet2 = 'cat'\nIf Python sees a word without quotes, it will look for a a variable with that name. If it can’t find one, it will throw an error."
+  },
+  {
+    "objectID": "variables-data-types-operations.html#numerical-data-types",
+    "href": "variables-data-types-operations.html#numerical-data-types",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Numerical Data Types",
+    "text": "Numerical Data Types\nint\nInts are integer numerical values. If a variable is assigned number value with no quotes and no decimal point, Python gives it data type int.\ni = 2\nfloat\nFloats are decimal numerical values. If a variable is assigned number value with no quotes and a decimal point, Python gives it data type float.\nf = 5.2"
+  },
+  {
+    "objectID": "variables-data-types-operations.html#math-operations-in-python",
+    "href": "variables-data-types-operations.html#math-operations-in-python",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Math Operations in Python",
+    "text": "Math Operations in Python\nPython provides a variety of built-in mathematical operations that can be performed on numeric data types, such as integers and floating-point numbers. Some common math operations include:\nAddition\nresult = 3 + 5  # Result will be 8\nSubtraction\nresult = 10 - 3  # Result will be 7\nMultiplication\nresult = 4 * 6  # Result will be 24\nDivision\nresult = 15 / 3  # Result will be 5.0 (float)\nModulo (Remainder)\nresult = 17 % 5  # Result will be 2\nExponentiation\nresult = 2 ** 3  # Result will be 8"
+  },
+  {
+    "objectID": "variables-data-types-operations.html#string-operations-in-python",
+    "href": "variables-data-types-operations.html#string-operations-in-python",
+    "title": "Variables, Data Types, and Operations",
+    "section": "String Operations in Python",
+    "text": "String Operations in Python\nPython also provides various string operations for manipulating and working with text data. Strings can be concatenated, sliced, and formatted in different ways.\nConcatenation\nstr1 = \"Hello\"\nstr2 = \"World\"\nresult = str1 + \" \" + str2  # Result will be \"Hello World\"\nString Length\ntext = \"Python\"\nlength = len(text)  # Length will be 6\nString Slicing\ntext = \"Python\"\nsubstring = text[0:3]  # Result will be \"Pyt\""
+  },
+  {
+    "objectID": "variables-data-types-operations.html#you-can-name-variables-almost-anything-you-want",
+    "href": "variables-data-types-operations.html#you-can-name-variables-almost-anything-you-want",
+    "title": "Variables, Data Types, and Operations",
+    "section": "You can name variables almost anything you want!*",
+    "text": "You can name variables almost anything you want!*\nIt’s a good idea to give your variables names that are a happy medium of descriptive and easy to type.\nThese two code blocks are the same in effect\nclr = \"blue\"\nprint(\"Imagine a \" + clr + \" sky\")\nc = \"blue\"\nprint(\"Imagine a \" + c + \" sky\")\nYou can’t start variable names with numbers in Python, and also shouldn’t give variables names that already have some function (like int, or in VPython, sphere)"
+  },
+  {
+    "objectID": "variables-data-types-operations.html#python-reads-code-blocks-top-to-bottom",
+    "href": "variables-data-types-operations.html#python-reads-code-blocks-top-to-bottom",
+    "title": "Variables, Data Types, and Operations",
+    "section": "Python reads code blocks top to bottom",
+    "text": "Python reads code blocks top to bottom\n\nn = 5 # assigns var n value 5\nprint(n) # output: 5\nn = 7 # reassigns n a new value\nprint(n) # output: 7\nn = n + 2 # assigns n a value based on prior value\nprint(n) # output: 9\nThe complete output for the above:\n5\n7\n9"
+  },
+  {
+    "objectID": "vpython-shapes-and-colors/index.html#vpython-colors-coded",
+    "href": "vpython-shapes-and-colors/index.html#vpython-colors-coded",
+    "title": "Vpython Shapes And Colors",
+    "section": "VPython Colors Coded",
+    "text": "VPython Colors Coded\n# colors encoded in 256 color RBG format\n# (a format very commonly found online)\nr256 = 0\ng256 = 163\nb256 = 108\n\n#convert from 256 color scheme to 0-1\nr1 = r256/255\ng1 = g256/255\nb1 = b256/255\n\nt = pyramid() #draw pyramid\n# color pyramid using converted colors\nt.color = vector(r1, g1, b1)"
+  },
+  {
+    "objectID": "classes-methods/index.html#explanation",
+    "href": "classes-methods/index.html#explanation",
+    "title": "Classes Methods",
+    "section": "Explanation",
+    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket\n-&gt; Self Parameter"
+  },
+  {
+    "objectID": "classes-methods/index.html#explanation-1",
+    "href": "classes-methods/index.html#explanation-1",
+    "title": "Classes Methods",
+    "section": "Explanation",
+    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
+  },
+  {
+    "objectID": "classes-methods/index.html#explanation-2",
+    "href": "classes-methods/index.html#explanation-2",
+    "title": "Classes Methods",
+    "section": "Explanation",
+    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
+  },
+  {
+    "objectID": "dictionaries/index.html#seeds-for-future-learning",
+    "href": "dictionaries/index.html#seeds-for-future-learning",
+    "title": "Dictionaries",
+    "section": "Seeds for future learning",
+    "text": "Seeds for future learning\nThe starter code includes import (lines 5-6) and some new string manipulations (line 17, 21). We will cover these topics in more detail in later classes."
+  },
+  {
+    "objectID": "dictionaries/index.html#keys",
+    "href": "dictionaries/index.html#keys",
+    "title": "Dictionaries",
+    "section": "Keys",
+    "text": "Keys\nKeys are the immutable (meaning stable and unchanging) names for values within a Python dictionary.\nKeys must be unique within a dictionary; duplicate keys are not allowed."
+  },
+  {
+    "objectID": "dictionaries/index.html#values",
+    "href": "dictionaries/index.html#values",
+    "title": "Dictionaries",
+    "section": "Values",
+    "text": "Values\nDictionary values are…\n\nflexible: They can be of any data type, including integers, floats, strings, lists, tuples, dictionaries, or even custom objects.\nmutable: Unlike keys, values can be mutable or immutable. This allows for storing and accessing dynamic data structures within a dictionary.\naccessed with keys: Values are accessed using their corresponding keys, providing a fast and efficient way to retrieve information from a dictionary."
   },
   {
     "objectID": "reminders/index.html#here-are-a-few-thoughts-based-on-your-answers",
@@ -362,5 +327,47 @@
     "title": "Reminders",
     "section": "A Quick Reminder",
     "text": "A Quick Reminder\nNo lab tomorrow!"
+  },
+  {
+    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-1",
+    "href": "conditionals/index.html#introduction-to-if-statements-in-python-1",
+    "title": "Conditionals",
+    "section": "Introduction to If Statements in Python",
+    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
+  },
+  {
+    "objectID": "conditionals/index.html#if-else-statements-in-python-1",
+    "href": "conditionals/index.html#if-else-statements-in-python-1",
+    "title": "Conditionals",
+    "section": "If-Else Statements in Python",
+    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
+  },
+  {
+    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-2",
+    "href": "conditionals/index.html#introduction-to-if-statements-in-python-2",
+    "title": "Conditionals",
+    "section": "Introduction to If Statements in Python",
+    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
+  },
+  {
+    "objectID": "conditionals/index.html#if-else-statements-in-python-2",
+    "href": "conditionals/index.html#if-else-statements-in-python-2",
+    "title": "Conditionals",
+    "section": "If-Else Statements in Python",
+    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
+  },
+  {
+    "objectID": "conditionals/index.html#introduction-to-if-statements-in-python-3",
+    "href": "conditionals/index.html#introduction-to-if-statements-in-python-3",
+    "title": "Conditionals",
+    "section": "Introduction to If Statements in Python",
+    "text": "Introduction to If Statements in Python\nIn Python, if statements are used for conditional execution. They allow you to control the flow of your program based on certain conditions.\n# Example of an if statement\nx = 10\nif x &gt; 5:\n    print(\"x is greater than 5\")\nThis example will print “x is greater than 5” because the condition x &gt; 5 evaluates to True."
+  },
+  {
+    "objectID": "conditionals/index.html#if-else-statements-in-python-3",
+    "href": "conditionals/index.html#if-else-statements-in-python-3",
+    "title": "Conditionals",
+    "section": "If-Else Statements in Python",
+    "text": "If-Else Statements in Python\nIn Python, if-else statements allow you to execute different blocks of code based on whether a condition is true or false.\n# Example of an if-else statement\nx = 3\nif x &gt; 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\nIn this example, since x is not greater than 5, the code block under the else statement will be executed, printing “x is not greater than 5”."
   }
 ]
