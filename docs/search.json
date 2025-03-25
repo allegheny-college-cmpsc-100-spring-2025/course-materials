@@ -270,7 +270,7 @@
     "href": "classes-methods/index.html#explanation",
     "title": "Classes Methods",
     "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket\n-&gt; Self Parameter"
+    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
   },
   {
     "objectID": "classes-methods/index.html#explanation-1",

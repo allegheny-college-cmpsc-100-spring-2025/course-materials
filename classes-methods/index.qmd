@@ -12,7 +12,7 @@ controls: true
 ---
 
 ::: incremental
- # Classes & Methods, Welcome Activity
+# Classes & Methods, Welcome Activity
 
 Below is the beginning of the `sphere()` class as it's written in the [VPython library source code](https://github.com/vpython/vpython-jupyter/blob/master/vpython/vpython.py). This code block includes the **class definition** and **constructor method**: 
 
@@ -22,7 +22,7 @@ class sphere(standardAttributes):
         args['_default_size'] = vector(2,2,2)
         args['_objName'] = "sphere"
         super(sphere, self).setup(args)
-        self._sizing = False # no axis/size connection
+        self._sizing = False# no axis/size connection
 ```
 
 > [!NOTE]
@@ -34,13 +34,10 @@ In today's Discord thread, see if you can guess the answers to any of the follow
 - Which piece of code includes the class definition? How does Python know a class's name and arguments?
 - Which piece of code defines the classes constructor method? What do you think a constructor method does? 
 
-
-[-> Classes and Methods](/classes-methods/02_classesAndMethods.md)
-
 :::
 
 ::: incremental
- # Introduction to Classes and Methods in Python
+# Introduction to Classes and Methods in Python
 
 Classes in Python allow you to define your own data types and organize related functionality into methods. Methods are functions defined within classes that operate on instances of the class. They provide a powerful way to structure and reuse code.
 
@@ -48,11 +45,10 @@ Classes in Python allow you to define your own data types and organize related f
 Imagine you're building a game. You can create a `Player` class with methods like `move()` and `attack()`. Each player object can have its own properties like health and position, managed by these methods.
 
 
-[-> Why Classes](/classes-methods/03_whyClasses.md)
 :::
 
 ::: incremental
- # Why Classes?
+# Why Classes?
 
 Classes offer several advantages over regular functions:
 
@@ -65,11 +61,10 @@ Classes offer several advantages over regular functions:
 4. **Modularity:** Classes facilitate modular programming, making it easier to maintain and extend your codebase.
 
 
-[-> Car Example](/classes-methods/04_carExample.md)
 :::
 
 ::: incremental
- # Car Example
+# Car Example
 
 ```python
 class Car:
@@ -85,11 +80,10 @@ This code defines a class named Car. It has a constructor method __init__() that
 
 [See it on Trinket](https://trinket.io/python/2b0b73f09e)
 
-[-> Self Parameter](/classes-methods/05_selfParameter.md)
 :::
 
 ::: incremental
- # The `self` Parameter in Python Classes and Methods
+# The `self` Parameter in Python Classes and Methods
 
 In Python classes and methods, `self` refers to the instance of the class itself. It is the first parameter of instance methods and is used to access and manipulate the attributes and methods of the object.
 
@@ -109,14 +103,13 @@ class MyClass:
         print(self.x)
 
 obj = MyClass(5)
-obj.print_x()  # Output: 5
+obj.print_x() # Output: 5
 ```
 
-[-> Constructor Method](/classes-methods/06_constructorMethod.md)
 :::
 
 ::: incremental
- # Python Class Constructor Method
+# Python Class Constructor Method
 
 The constructor method in Python classes, denoted by `__init__`, is called automatically when an instance of the class is created. It is used to initialize the attributes of the instance.
 
@@ -138,11 +131,10 @@ car1 = Car("Toyota", "Camry")
 car2 = Car("Honda", "Accord")
 ```
 
-[-> Instances and Attributes](/classes-methods/07_instancesAndAttributes.md)
 :::
 
 ::: incremental
- # Python Class Instances and Attributes
+# Python Class Instances and Attributes
 
 In Python, instances are individual objects created from a class. Each instance has its own set of attributes, which are variables associated with the instance. Attributes store data specific to each instance.
 
@@ -163,15 +155,14 @@ class Car:
 car1 = Car("Toyota", "Camry")
 car2 = Car("Honda", "Accord")
 
-print(car1.make)  # Output: Toyota
-print(car2.model)  # Output: Accord
+print(car1.make) # Output: Toyota
+print(car2.model) # Output: Accord
 ```
 
-[-> Other Methods](/classes-methods/08_otherMethods.md)
 :::
 
 ::: incremental
- # Python Class Methods
+# Python Class Methods
 
 In addition to the constructor method (`__init__`), Python classes can have other methods to perform various tasks or operations on class instances.
 
@@ -196,15 +187,14 @@ class Circle:
 
 # Usage:
 circle = Circle(5)
-print("Area:", circle.area())  # Output: 78.5
-print("Perimeter:", circle.perimeter())  # Output: 31.4
+print("Area:", circle.area()) # Output: 78.5
+print("Perimeter:", circle.perimeter()) # Output: 31.4
 ```
 
-[->  Vpython Classes](/classes-methods/09_VPythonClasses.md)
 :::
 
 ::: incremental
- # VPython Classes
+# VPython Classes
 
 We have already been using classes and methods in VPython. Every shape in VPython is its own class. 
 
@@ -216,7 +206,7 @@ Because the shape constructor methods operate very similar to a regular function
 :::
 
 ::: incremental
- # Stick Figure Example 
+# Stick Figure Example 
 
 <img src = "image.png" style = "max-width:500px" />
 
@@ -224,410 +214,3 @@ Because the shape constructor methods operate very similar to a regular function
 :::
 
 
----
-title: "Classes Methods"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# Classes & Methods, Welcome Activity
-
-Below is the beginning of the `sphere()` class as it's written in the [VPython library source code](https://github.com/vpython/vpython-jupyter/blob/master/vpython/vpython.py). This code block includes the **class definition** and **constructor method**: 
-
-```python
-class sphere(standardAttributes):
-    def __init__(self, **args):
-        args['_default_size'] = vector(2,2,2)
-        args['_objName'] = "sphere"
-        super(sphere, self).setup(args)
-        self._sizing = False # no axis/size connection
-```
-
-> [!NOTE]
-> Some syntax above are advanced and we will learn a slightly simpler verison in the coming lesson. 
-
-In today's Discord thread, see if you can guess the answers to any of the following questions: 
-
-- What is the default size of a sphere? 
-- Which piece of code includes the class definition? How does Python know a class's name and arguments?
-- Which piece of code defines the classes constructor method? What do you think a constructor method does? 
-
-
-:::
-::: incremental
-# Introduction to Classes and Methods in Python
-
-Classes in Python allow you to define your own data types and organize related functionality into methods. Methods are functions defined within classes that operate on instances of the class. They provide a powerful way to structure and reuse code.
-
-**Example:** 
-Imagine you're building a game. You can create a `Player` class with methods like `move()` and `attack()`. Each player object can have its own properties like health and position, managed by these methods.
-
-
-:::
-::: incremental
-# Why Classes?
-
-Classes offer several advantages over regular functions:
-
-1. **Encapsulation:** Classes encapsulate data and behavior into a single unit, promoting clean and organized code.
-
-2. **Code Reusability:** With classes, you can reuse code by creating multiple instances with the same structure and behavior.
-
-3. **Inheritance:** Classes support inheritance, allowing you to create new classes based on existing ones, saving time and effort.
-
-4. **Modularity:** Classes facilitate modular programming, making it easier to maintain and extend your codebase.
-
-
-:::
-::: incremental
-# Car Example
-
-```python
-class Car:
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-    def display_info(self):
-        print("Car: " + self.year + " " + self.make + " " + self.model)
-```
-## Explanation
-This code defines a class named Car. It has a constructor method __init__() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car's make, model, and year when called.
-
-[See it on Trinket](https://trinket.io/python/2b0b73f09e)
-
-:::
-::: incremental
-# The `self` Parameter in Python Classes and Methods
-
-In Python classes and methods, `self` refers to the instance of the class itself. It is the first parameter of instance methods and is used to access and manipulate the attributes and methods of the object.
-
-**Key Points:**
-- `self` is not a reserved keyword, but it is a convention to use it as the first parameter in instance methods.
-- It allows methods to access and modify the attributes of the instance to which they belong.
-- When calling methods of an instance, Python automatically passes the instance itself as the first argument (i.e., `self`).
-
-Example:
-
-```python
-class MyClass:
-    def __init__(self, x):
-        self.x = x
-
-    def print_x(self):
-        print(self.x)
-
-obj = MyClass(5)
-obj.print_x()  # Output: 5
-```
-
-:::
-::: incremental
-# Python Class Constructor Method
-
-The constructor method in Python classes, denoted by `__init__`, is called automatically when an instance of the class is created. It is used to initialize the attributes of the instance.
-
-**Key Points:**
-- The constructor method is used to set up the initial state of the object.
-- It is defined using the `def __init__(self, ...)` syntax within the class definition.
-- The constructor can accept arguments to initialize instance attributes.
-- It is called implicitly when an instance of the class is created using the class name followed by parentheses.
-
-Example:
-
-```python
-class Car:
-    def __init__(self, make, model):
-        self.make = make
-        self.model = model
-
-car1 = Car("Toyota", "Camry")
-car2 = Car("Honda", "Accord")
-```
-
-:::
-::: incremental
-# Python Class Instances and Attributes
-
-In Python, instances are individual objects created from a class. Each instance has its own set of attributes, which are variables associated with the instance. Attributes store data specific to each instance.
-
-**Key Points:**
-- Instances are created by calling the class as if it were a function.
-- Each instance has its own namespace, allowing it to have unique attributes.
-- Attributes are accessed using dot notation (`instance.attribute`).
-- Attributes can be assigned values during object creation (in the constructor) or dynamically during the object's lifetime.
-
-Example:
-
-```python
-class Car:
-    def __init__(self, make, model):
-        self.make = make
-        self.model = model
-
-car1 = Car("Toyota", "Camry")
-car2 = Car("Honda", "Accord")
-
-print(car1.make)  # Output: Toyota
-print(car2.model)  # Output: Accord
-```
-
-:::
-::: incremental
-# Python Class Methods
-
-In addition to the constructor method (`__init__`), Python classes can have other methods to perform various tasks or operations on class instances.
-
-**Key Points:**
-- Methods are functions defined within a class.
-- They operate on the attributes of class instances and can perform specific actions or computations.
-- Methods are defined using the `def` keyword within the class definition.
-- They typically accept `self` as the first parameter to reference the instance on which the method is called.
-
-Example:
-
-```python
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
-
-    def area(self):
-        return 3.14 * self.radius**2
-
-    def perimeter(self):
-        return 2 * 3.14 * self.radius
-
-# Usage:
-circle = Circle(5)
-print("Area:", circle.area())  # Output: 78.5
-print("Perimeter:", circle.perimeter())  # Output: 31.4
-```
-
-:::
-::: incremental
-# VPython Classes
-
-We have already been using classes and methods in VPython. Every shape in VPython is its own class. 
-
-<img src = "image-1.png" style = "max-width:500px" />
-
-Because the shape constructor methods operate very similar to a regular function, we have been discussing shapes that way for simplicity. However, there is one shape **method** we have used several times. Can you remember what it is? 
-
-:::
-::: incremental
-# Stick Figure Example 
-
-<img src = "image.png" style = "max-width:500px" />
-
-[This example](https://trinket.io/glowscript/68101cfb67) takes our stick figure code from previous classes and puts it in a class. What new capabilties can we give the stick figure in this format? :::
-
----
-title: "Classes Methods"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# Classes & Methods, Welcome Activity
-
-Below is the beginning of the `sphere()` class as it's written in the [VPython library source code](https://github.com/vpython/vpython-jupyter/blob/master/vpython/vpython.py). This code block includes the **class definition** and **constructor method**: 
-
-```python
-class sphere(standardAttributes):
-    def __init__(self, **args):
-        args['_default_size'] = vector(2,2,2)
-        args['_objName'] = "sphere"
-        super(sphere, self).setup(args)
-        self._sizing = False # no axis/size connection
-```
-
-> [!NOTE]
-> Some syntax above are advanced and we will learn a slightly simpler verison in the coming lesson. 
-
-In today's Discord thread, see if you can guess the answers to any of the following questions: 
-
-- What is the default size of a sphere? 
-- Which piece of code includes the class definition? How does Python know a class's name and arguments?
-- Which piece of code defines the classes constructor method? What do you think a constructor method does? 
-
-
-:::
-::: incremental
-# Introduction to Classes and Methods in Python
-
-Classes in Python allow you to define your own data types and organize related functionality into methods. Methods are functions defined within classes that operate on instances of the class. They provide a powerful way to structure and reuse code.
-
-**Example:** 
-Imagine you're building a game. You can create a `Player` class with methods like `move()` and `attack()`. Each player object can have its own properties like health and position, managed by these methods.
-
-
-:::
-::: incremental
-# Why Classes?
-
-Classes offer several advantages over regular functions:
-
-1. **Encapsulation:** Classes encapsulate data and behavior into a single unit, promoting clean and organized code.
-
-2. **Code Reusability:** With classes, you can reuse code by creating multiple instances with the same structure and behavior.
-
-3. **Inheritance:** Classes support inheritance, allowing you to create new classes based on existing ones, saving time and effort.
-
-4. **Modularity:** Classes facilitate modular programming, making it easier to maintain and extend your codebase.
-
-
-:::
-::: incremental
-# Car Example
-
-```python
-class Car:
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-    def display_info(self):
-        print("Car: " + self.year + " " + self.make + " " + self.model)
-```
-## Explanation
-This code defines a class named Car. It has a constructor method __init__() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car's make, model, and year when called.
-
-[See it on Trinket](https://trinket.io/python/2b0b73f09e)
-
-:::
-::: incremental
-# The `self` Parameter in Python Classes and Methods
-
-In Python classes and methods, `self` refers to the instance of the class itself. It is the first parameter of instance methods and is used to access and manipulate the attributes and methods of the object.
-
-**Key Points:**
-- `self` is not a reserved keyword, but it is a convention to use it as the first parameter in instance methods.
-- It allows methods to access and modify the attributes of the instance to which they belong.
-- When calling methods of an instance, Python automatically passes the instance itself as the first argument (i.e., `self`).
-
-Example:
-
-```python
-class MyClass:
-    def __init__(self, x):
-        self.x = x
-
-    def print_x(self):
-        print(self.x)
-
-obj = MyClass(5)
-obj.print_x()  # Output: 5
-```
-
-:::
-::: incremental
-# Python Class Constructor Method
-
-The constructor method in Python classes, denoted by `__init__`, is called automatically when an instance of the class is created. It is used to initialize the attributes of the instance.
-
-**Key Points:**
-- The constructor method is used to set up the initial state of the object.
-- It is defined using the `def __init__(self, ...)` syntax within the class definition.
-- The constructor can accept arguments to initialize instance attributes.
-- It is called implicitly when an instance of the class is created using the class name followed by parentheses.
-
-Example:
-
-```python
-class Car:
-    def __init__(self, make, model):
-        self.make = make
-        self.model = model
-
-car1 = Car("Toyota", "Camry")
-car2 = Car("Honda", "Accord")
-```
-
-:::
-::: incremental
-# Python Class Instances and Attributes
-
-In Python, instances are individual objects created from a class. Each instance has its own set of attributes, which are variables associated with the instance. Attributes store data specific to each instance.
-
-**Key Points:**
-- Instances are created by calling the class as if it were a function.
-- Each instance has its own namespace, allowing it to have unique attributes.
-- Attributes are accessed using dot notation (`instance.attribute`).
-- Attributes can be assigned values during object creation (in the constructor) or dynamically during the object's lifetime.
-
-Example:
-
-```python
-class Car:
-    def __init__(self, make, model):
-        self.make = make
-        self.model = model
-
-car1 = Car("Toyota", "Camry")
-car2 = Car("Honda", "Accord")
-
-print(car1.make)  # Output: Toyota
-print(car2.model)  # Output: Accord
-```
-
-:::
-::: incremental
-# Python Class Methods
-
-In addition to the constructor method (`__init__`), Python classes can have other methods to perform various tasks or operations on class instances.
-
-**Key Points:**
-- Methods are functions defined within a class.
-- They operate on the attributes of class instances and can perform specific actions or computations.
-- Methods are defined using the `def` keyword within the class definition.
-- They typically accept `self` as the first parameter to reference the instance on which the method is called.
-
-Example:
-
-```python
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
-
-    def area(self):
-        return 3.14 * self.radius**2
-
-    def perimeter(self):
-        return 2 * 3.14 * self.radius
-
-# Usage:
-circle = Circle(5)
-print("Area:", circle.area())  # Output: 78.5
-print("Perimeter:", circle.perimeter())  # Output: 31.4
-```
-
-:::
-::: incremental
-# VPython Classes
-
-We have already been using classes and methods in VPython. Every shape in VPython is its own class. 
-
-<img src = "image-1.png" style = "max-width:500px" />
-
-Because the shape constructor methods operate very similar to a regular function, we have been discussing shapes that way for simplicity. However, there is one shape **method** we have used several times. Can you remember what it is? 
-
-:::
-::: incremental
-# Stick Figure Example 
-
-<img src = "image.png" style = "max-width:500px" />
-
-[This example](https://trinket.io/glowscript/68101cfb67) takes our stick figure code from previous classes and puts it in a class. What new capabilties can we give the stick figure in this format? :::
