@@ -223,18 +223,10 @@ Morgan Green
 <span id="cb2-2"><a></a>    <span class="co"># Function body</span></span>
 <span id="cb2-3"><a></a>    result <span class="op">=</span> parameter1 <span class="op">+</span> parameter2</span>
 <span id="cb2-4"><a></a>    <span class="cf">return</span> result <span class="co"># returning a value is optional</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-
-<section id="keywords" class="title-slide slide level1 incremental center">
-<h1>Keywords</h1>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> <span class="op">&lt;</span>function_name<span class="op">&gt;</span>(parameter1, parameter2):</span>
-<span id="cb3-2"><a></a>    <span class="co"># Function body</span></span>
-<span id="cb3-3"><a></a>    result <span class="op">=</span> parameter1 <span class="op">+</span> parameter2</span>
-<span id="cb3-4"><a></a>    <span class="cf">return</span> result <span class="co"># returning a value is optional</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br> <code>def</code> Keyword to start function definition <br></p>
-<p><code>function_name</code> Name of the function <br></p>
-<p><code>(parameter1, parameter2)</code>: Parameters (inputs) the function takes <br></p>
-<p><code>return</code>: Keyword to specify the return value(s) of the function <br></p>
+<p><br></p>
+<div class="{small}">
+<p><code>def</code>: Keyword to start function definition. <code>function_name</code>: Name of the function. <code>(parameter1, parameter2)</code>: Parameters (inputs) the function takes. <code>return</code>: Keyword to specify the return value(s) of the function. Indentation: Indicates the scope of the function body.</p>
+</div>
 </section>
 
 <section id="parameters-vs.-arguments" class="title-slide slide level1 incremental center">
@@ -245,21 +237,21 @@ Morgan Green
 <li><p><strong>Arguments</strong>: These are the actual values passed to the function when it is called. They correspond to the parameters defined in the function.</p></li>
 </ul>
 <p>Example:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="kw">def</span> greet(name): <span class="co"># here, name is a parameter</span></span>
-<span id="cb4-2"><a></a>    <span class="cf">return</span> <span class="ss">f"Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span></span>
-<span id="cb4-3"><a></a></span>
-<span id="cb4-4"><a></a><span class="bu">print</span>(greet(<span class="st">"Alice"</span>)) <span class="co"># Alice is an argument</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> greet(name): <span class="co"># here, name is a parameter</span></span>
+<span id="cb3-2"><a></a>    <span class="cf">return</span> <span class="ss">f"Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span></span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a><span class="bu">print</span>(greet(<span class="st">"Alice"</span>)) <span class="co"># Alice is an argument</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="return-statement" class="title-slide slide level1 incremental center">
 <h1>Return Statement</h1>
 <p>In Python, the <code>return</code> statement is used to exit a function and optionally return a value back to the caller.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> add(a, b):</span>
-<span id="cb5-2"><a></a>    result <span class="op">=</span> a <span class="op">+</span> b</span>
-<span id="cb5-3"><a></a>    <span class="cf">return</span> result</span>
-<span id="cb5-4"><a></a></span>
-<span id="cb5-5"><a></a><span class="bu">sum</span> <span class="op">=</span> add(<span class="dv">3</span>, <span class="dv">5</span>)</span>
-<span id="cb5-6"><a></a><span class="bu">print</span>(<span class="bu">sum</span>)  <span class="co"># Output: 8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="kw">def</span> add(a, b):</span>
+<span id="cb4-2"><a></a>    result <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb4-3"><a></a>    <span class="cf">return</span> result</span>
+<span id="cb4-4"><a></a></span>
+<span id="cb4-5"><a></a><span class="bu">sum</span> <span class="op">=</span> add(<span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb4-6"><a></a><span class="bu">print</span>(<span class="bu">sum</span>)  <span class="co"># Output: 8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="a-function-of" class="title-slide slide level1 incremental center">
@@ -274,10 +266,8 @@ Morgan Green
 <h1>Velocity</h1>
 <p>Velocity is a word for <em>speed</em> that specifically denotes distance divided by time.</p>
 <p>In VPython, it may be easiest to understand velocity in terms of units per second; however, in our animations, we need to adapt a per-second velocity to match up with our frame rate. ​We can write a function that does this.</p>
-<p><br></p>
-<pre><code>def frameVelocity(velocity, fps):
-  return velocity/fps # return per-frame velocity</code></pre>
-<p><br></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> frameVelocity(velocity, fps):</span>
+<span id="cb5-2"><a></a>  <span class="cf">return</span> velocity<span class="op">/</span>fps <span class="co"># return per-frame velocity</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>See an example of this function working <a href="https://trinket.io/glowscript/c08641882c">on Trinket</a>.</p>
 </section>
 
@@ -285,14 +275,12 @@ Morgan Green
 <h1>Acceleration</h1>
 <p>Acceleration is the change in velocity over time. It is defined in distance divided by time-squared (e.g.&nbsp;m/s**2).</p>
 <p>Let’s say you wanted an object with a certain initial (or starting) velocity to come to zero within a certain time frame. You could write a function to calculate the necessary acceleration to make this happen:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="co"># create acceleration to zero </span></span>
-<span id="cb7-2"><a></a><span class="co"># function given initial velocity (in units per second)</span></span>
-<span id="cb7-3"><a></a><span class="co"># seconds to stop, and frame rate</span></span>
-<span id="cb7-4"><a></a><span class="kw">def</span> accelToZero(initial_velocity, seconds_to_zero, fps):</span>
-<span id="cb7-5"><a></a>    <span class="co"># calculate per s^2 accel</span></span>
-<span id="cb7-6"><a></a>    acceleration <span class="op">=</span> <span class="op">-</span>initial_velocity<span class="op">/</span>seconds_to_zero    </span>
-<span id="cb7-7"><a></a>    acceleration <span class="op">/=</span> fps <span class="co"># convert to per frame acceleration</span></span>
-<span id="cb7-8"><a></a>    <span class="cf">return</span> acceleration <span class="co"># return acceleration</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="co"># create acceleration to zero function given initial velocity (in units per second)</span></span>
+<span id="cb6-2"><a></a><span class="co"># seconds to stop, and frame rate</span></span>
+<span id="cb6-3"><a></a><span class="kw">def</span> accelToZero(initial_velocity, seconds_to_zero, fps):</span>
+<span id="cb6-4"><a></a>    acceleration <span class="op">=</span> <span class="op">-</span>initial_velocity<span class="op">/</span>seconds_to_zero <span class="co"># calculate per s^2 accel</span></span>
+<span id="cb6-5"><a></a>    acceleration <span class="op">/=</span> fps <span class="co"># convert to per frame acceleration</span></span>
+<span id="cb6-6"><a></a>    <span class="cf">return</span> acceleration <span class="co"># return acceleration</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>See this function in action <a href="https://trinket.io/glowscript/c27ed58711">on Trinket</a>.</p>
 </section>
 

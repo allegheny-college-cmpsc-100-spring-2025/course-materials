@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Morgan Green">
-  <title>Computational Expression – Classes Methods</title>
+  <title>Computational Expression – Classes and Methods</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -192,7 +192,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Classes Methods</h1>
+  <h1 class="title">Classes and Methods</h1>
   <p class="subtitle">CMPSC 100: Computational Expression, Spring 2025</p>
 
 <div class="quarto-title-authors">
@@ -204,26 +204,35 @@ Morgan Green
 </div>
 
 </section>
-<section id="classes-methods-welcome-activity" class="title-slide slide level1 incremental center">
-<h1>Classes &amp; Methods, Welcome Activity</h1>
-<p>Below is the beginning of the <code>sphere()</code> class as it’s written in the <a href="https://github.com/vpython/vpython-jupyter/blob/master/vpython/vpython.py">VPython library source code</a>. This code block includes the <strong>class definition</strong> and <strong>constructor method</strong>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="kw">class</span> sphere(standardAttributes):</span>
-<span id="cb1-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, <span class="op">**</span>args):</span>
-<span id="cb1-3"><a></a>        args[<span class="st">'_default_size'</span>] <span class="op">=</span> vector(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
-<span id="cb1-4"><a></a>        args[<span class="st">'_objName'</span>] <span class="op">=</span> <span class="st">"sphere"</span></span>
-<span id="cb1-5"><a></a>        <span class="bu">super</span>(sphere, <span class="va">self</span>).setup(args)</span>
-<span id="cb1-6"><a></a>        <span class="va">self</span>._sizing <span class="op">=</span> <span class="va">False</span><span class="co"># no axis/size connection</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<blockquote>
-<p>[!NOTE] Some syntax above are advanced and we will learn a slightly simpler verison in the coming lesson.</p>
-</blockquote>
-<p>In today’s Discord thread, see if you can guess the answers to any of the following questions:</p>
-<ul>
-<li>What is the default size of a sphere?</li>
-<li>Which piece of code includes the class definition? How does Python know a class’s name and arguments?</li>
-<li>Which piece of code defines the classes constructor method? What do you think a constructor method does?</li>
-</ul>
-</section>
+<section class="slide level2">
 
+<!--
+::: incremental
+# Classes & Methods, Welcome Activity
+
+Below is the beginning of the `sphere()` class as it's written in the [VPython library source code](https://github.com/vpython/vpython-jupyter/blob/master/vpython/vpython.py). This code block includes the **class definition** and **constructor method**: 
+
+```python
+class sphere(standardAttributes):
+    def __init__(self, **args):
+        args['_default_size'] = vector(2,2,2)
+        args['_objName'] = "sphere"
+        super(sphere, self).setup(args)
+        self._sizing = False# no axis/size connection
+```
+
+> [!NOTE]
+> Some syntax above are advanced and we will learn a slightly simpler verison in the coming lesson. 
+
+In today's Discord thread, see if you can guess the answers to any of the following questions: 
+
+- What is the default size of a sphere? 
+- Which piece of code includes the class definition? How does Python know a class's name and arguments?
+- Which piece of code defines the classes constructor method? What do you think a constructor method does? 
+
+:::
+-->
+</section>
 <section id="introduction-to-classes-and-methods-in-python" class="title-slide slide level1 incremental center">
 <h1>Introduction to Classes and Methods in Python</h1>
 <p>Classes in Python allow you to define your own data types and organize related functionality into methods. Methods are functions defined within classes that operate on instances of the class. They provide a powerful way to structure and reuse code.</p>
@@ -244,13 +253,13 @@ Morgan Green
 <section>
 <section id="car-example" class="title-slide slide level1 incremental center">
 <h1>Car Example</h1>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">class</span> Car:</span>
-<span id="cb2-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, make, model, year):</span>
-<span id="cb2-3"><a></a>        <span class="va">self</span>.make <span class="op">=</span> make</span>
-<span id="cb2-4"><a></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
-<span id="cb2-5"><a></a>        <span class="va">self</span>.year <span class="op">=</span> year</span>
-<span id="cb2-6"><a></a>    <span class="kw">def</span> display_info(<span class="va">self</span>):</span>
-<span id="cb2-7"><a></a>        <span class="bu">print</span>(<span class="st">"Car: "</span> <span class="op">+</span> <span class="va">self</span>.year <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> <span class="va">self</span>.make <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> <span class="va">self</span>.model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="kw">class</span> Car:</span>
+<span id="cb1-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, make, model, year):</span>
+<span id="cb1-3"><a></a>        <span class="va">self</span>.make <span class="op">=</span> make</span>
+<span id="cb1-4"><a></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
+<span id="cb1-5"><a></a>        <span class="va">self</span>.year <span class="op">=</span> year</span>
+<span id="cb1-6"><a></a>    <span class="kw">def</span> display_info(<span class="va">self</span>):</span>
+<span id="cb1-7"><a></a>        <span class="bu">print</span>(<span class="st">"Car: "</span> <span class="op">+</span> <span class="va">self</span>.year <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> <span class="va">self</span>.make <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> <span class="va">self</span>.model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="explanation" class="slide level2">
 <h2>Explanation</h2>
@@ -260,83 +269,79 @@ Morgan Green
 <section id="the-self-parameter-in-python-classes-and-methods" class="title-slide slide level1 incremental center">
 <h1>The <code>self</code> Parameter in Python Classes and Methods</h1>
 <p>In Python classes and methods, <code>self</code> refers to the instance of the class itself. It is the first parameter of instance methods and is used to access and manipulate the attributes and methods of the object.</p>
-<p><strong>Key Points:</strong> - <code>self</code> is not a reserved keyword, but it is a convention to use it as the first parameter in instance methods. - It allows methods to access and modify the attributes of the instance to which they belong. - When calling methods of an instance, Python automatically passes the instance itself as the first argument (i.e., <code>self</code>).</p>
-<p>Example:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">class</span> MyClass:</span>
-<span id="cb3-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x):</span>
-<span id="cb3-3"><a></a>        <span class="va">self</span>.x <span class="op">=</span> x</span>
-<span id="cb3-4"><a></a></span>
-<span id="cb3-5"><a></a>    <span class="kw">def</span> print_x(<span class="va">self</span>):</span>
-<span id="cb3-6"><a></a>        <span class="bu">print</span>(<span class="va">self</span>.x)</span>
-<span id="cb3-7"><a></a></span>
-<span id="cb3-8"><a></a>obj <span class="op">=</span> MyClass(<span class="dv">5</span>)</span>
-<span id="cb3-9"><a></a>obj.print_x() <span class="co"># Output: 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">class</span> MyClass:</span>
+<span id="cb2-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x):</span>
+<span id="cb2-3"><a></a>        <span class="va">self</span>.x <span class="op">=</span> x</span>
+<span id="cb2-4"><a></a></span>
+<span id="cb2-5"><a></a>    <span class="kw">def</span> print_x(<span class="va">self</span>):</span>
+<span id="cb2-6"><a></a>        <span class="bu">print</span>(<span class="va">self</span>.x)</span>
+<span id="cb2-7"><a></a></span>
+<span id="cb2-8"><a></a>obj <span class="op">=</span> MyClass(<span class="dv">5</span>)</span>
+<span id="cb2-9"><a></a>obj.print_x() <span class="co"># Output: 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="python-class-constructor-method" class="title-slide slide level1 incremental center">
 <h1>Python Class Constructor Method</h1>
 <p>The constructor method in Python classes, denoted by <code>__init__</code>, is called automatically when an instance of the class is created. It is used to initialize the attributes of the instance.</p>
-<p><strong>Key Points:</strong> - The constructor method is used to set up the initial state of the object. - It is defined using the <code>def __init__(self, ...)</code> syntax within the class definition. - The constructor can accept arguments to initialize instance attributes. - It is called implicitly when an instance of the class is created using the class name followed by parentheses.</p>
-<p>Example:</p>
+<p><br></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">class</span> Car:</span>
+<span id="cb3-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, make, model):</span>
+<span id="cb3-3"><a></a>        <span class="va">self</span>.make <span class="op">=</span> make</span>
+<span id="cb3-4"><a></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
+<span id="cb3-5"><a></a></span>
+<span id="cb3-6"><a></a>car1 <span class="op">=</span> Car(<span class="st">"Toyota"</span>, <span class="st">"Camry"</span>)</span>
+<span id="cb3-7"><a></a>car2 <span class="op">=</span> Car(<span class="st">"Honda"</span>, <span class="st">"Accord"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+
+<section id="python-class-instances-and-attributes" class="title-slide slide level1 incremental center">
+<h1>Python Class Instances and Attributes</h1>
+<p>In Python, instances are individual objects created from a class. Each instance has its own set of attributes, which are variables associated with the instance. Attributes store data specific to each instance.</p>
+<p>Attributes are accessed using dot notation (<code>instance.attribute</code>).</p>
+<p><br></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="kw">class</span> Car:</span>
 <span id="cb4-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, make, model):</span>
 <span id="cb4-3"><a></a>        <span class="va">self</span>.make <span class="op">=</span> make</span>
 <span id="cb4-4"><a></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
 <span id="cb4-5"><a></a></span>
 <span id="cb4-6"><a></a>car1 <span class="op">=</span> Car(<span class="st">"Toyota"</span>, <span class="st">"Camry"</span>)</span>
-<span id="cb4-7"><a></a>car2 <span class="op">=</span> Car(<span class="st">"Honda"</span>, <span class="st">"Accord"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-7"><a></a>car2 <span class="op">=</span> Car(<span class="st">"Honda"</span>, <span class="st">"Accord"</span>)</span>
+<span id="cb4-8"><a></a></span>
+<span id="cb4-9"><a></a><span class="bu">print</span>(car1.make) <span class="co"># Output: Toyota</span></span>
+<span id="cb4-10"><a></a><span class="bu">print</span>(car2.model) <span class="co"># Output: Accord</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
-<section id="python-class-instances-and-attributes" class="title-slide slide level1 incremental center">
-<h1>Python Class Instances and Attributes</h1>
-<p>In Python, instances are individual objects created from a class. Each instance has its own set of attributes, which are variables associated with the instance. Attributes store data specific to each instance.</p>
-<p><strong>Key Points:</strong> - Instances are created by calling the class as if it were a function. - Each instance has its own namespace, allowing it to have unique attributes. - Attributes are accessed using dot notation (<code>instance.attribute</code>). - Attributes can be assigned values during object creation (in the constructor) or dynamically during the object’s lifetime.</p>
-<p>Example:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">class</span> Car:</span>
-<span id="cb5-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, make, model):</span>
-<span id="cb5-3"><a></a>        <span class="va">self</span>.make <span class="op">=</span> make</span>
-<span id="cb5-4"><a></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
-<span id="cb5-5"><a></a></span>
-<span id="cb5-6"><a></a>car1 <span class="op">=</span> Car(<span class="st">"Toyota"</span>, <span class="st">"Camry"</span>)</span>
-<span id="cb5-7"><a></a>car2 <span class="op">=</span> Car(<span class="st">"Honda"</span>, <span class="st">"Accord"</span>)</span>
-<span id="cb5-8"><a></a></span>
-<span id="cb5-9"><a></a><span class="bu">print</span>(car1.make) <span class="co"># Output: Toyota</span></span>
-<span id="cb5-10"><a></a><span class="bu">print</span>(car2.model) <span class="co"># Output: Accord</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-
-<section id="python-class-methods" class="title-slide slide level1 incremental center">
-<h1>Python Class Methods</h1>
+<section id="additional-methods" class="title-slide slide level1 incremental center">
+<h1>Additional Methods</h1>
 <p>In addition to the constructor method (<code>__init__</code>), Python classes can have other methods to perform various tasks or operations on class instances.</p>
-<p><strong>Key Points:</strong> - Methods are functions defined within a class. - They operate on the attributes of class instances and can perform specific actions or computations. - Methods are defined using the <code>def</code> keyword within the class definition. - They typically accept <code>self</code> as the first parameter to reference the instance on which the method is called.</p>
-<p>Example:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">class</span> Circle:</span>
-<span id="cb6-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, radius):</span>
-<span id="cb6-3"><a></a>        <span class="va">self</span>.radius <span class="op">=</span> radius</span>
-<span id="cb6-4"><a></a></span>
-<span id="cb6-5"><a></a>    <span class="kw">def</span> area(<span class="va">self</span>):</span>
-<span id="cb6-6"><a></a>        <span class="cf">return</span> <span class="fl">3.14</span> <span class="op">*</span> <span class="va">self</span>.radius<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb6-7"><a></a></span>
-<span id="cb6-8"><a></a>    <span class="kw">def</span> perimeter(<span class="va">self</span>):</span>
-<span id="cb6-9"><a></a>        <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> <span class="fl">3.14</span> <span class="op">*</span> <span class="va">self</span>.radius</span>
-<span id="cb6-10"><a></a></span>
-<span id="cb6-11"><a></a><span class="co"># Usage:</span></span>
-<span id="cb6-12"><a></a>circle <span class="op">=</span> Circle(<span class="dv">5</span>)</span>
-<span id="cb6-13"><a></a><span class="bu">print</span>(<span class="st">"Area:"</span>, circle.area()) <span class="co"># Output: 78.5</span></span>
-<span id="cb6-14"><a></a><span class="bu">print</span>(<span class="st">"Perimeter:"</span>, circle.perimeter()) <span class="co"># Output: 31.4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">class</span> Circle:</span>
+<span id="cb5-2"><a></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, radius):</span>
+<span id="cb5-3"><a></a>        <span class="va">self</span>.radius <span class="op">=</span> radius</span>
+<span id="cb5-4"><a></a></span>
+<span id="cb5-5"><a></a>    <span class="kw">def</span> area(<span class="va">self</span>):</span>
+<span id="cb5-6"><a></a>        <span class="cf">return</span> <span class="fl">3.14</span> <span class="op">*</span> <span class="va">self</span>.radius<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb5-7"><a></a></span>
+<span id="cb5-8"><a></a>    <span class="kw">def</span> perimeter(<span class="va">self</span>):</span>
+<span id="cb5-9"><a></a>        <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> <span class="fl">3.14</span> <span class="op">*</span> <span class="va">self</span>.radius</span>
+<span id="cb5-10"><a></a></span>
+<span id="cb5-11"><a></a><span class="co"># Usage:</span></span>
+<span id="cb5-12"><a></a>circle <span class="op">=</span> Circle(<span class="dv">5</span>)</span>
+<span id="cb5-13"><a></a><span class="bu">print</span>(<span class="st">"Area:"</span>, circle.area()) <span class="co"># Output: 78.5</span></span>
+<span id="cb5-14"><a></a><span class="bu">print</span>(<span class="st">"Perimeter:"</span>, circle.perimeter()) <span class="co"># Output: 31.4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="vpython-classes" class="title-slide slide level1 incremental center">
 <h1>VPython Classes</h1>
 <p>We have already been using classes and methods in VPython. Every shape in VPython is its own class.</p>
 
-<img src="image-1.png" style="max-width:500px" class="r-stretch"><p>Because the shape constructor methods operate very similar to a regular function, we have been discussing shapes that way for simplicity. However, there is one shape <strong>method</strong> we have used several times. Can you remember what it is?</p>
-<p><a href="../classes-methods/10_stickFigureExample.md">-&gt; Stick Figure example</a></p>
+<img src="image-1.png" class="r-stretch"><p>Because the shape constructor methods operate very similar to a regular function, we have been discussing shapes that way for simplicity. However, there is one shape <strong>method</strong> we have used several times. Can you remember what it is?</p>
 </section>
 
 <section id="stick-figure-example" class="title-slide slide level1 incremental center">
 <h1>Stick Figure Example</h1>
 
-<img src="image.png" style="max-width:500px" class="r-stretch"><p><a href="https://trinket.io/glowscript/68101cfb67">This example</a> takes our stick figure code from previous classes and puts it in a class. What new capabilties can we give the stick figure in this format?</p>
+<img src="image.png" style="/" class="r-stretch"><p><a href="https://trinket.io/glowscript/68101cfb67">This example</a> takes our stick figure code from previous classes and puts it in a class. What new capabilties can we give the stick figure in this format?</p>
 </section>
 
 
