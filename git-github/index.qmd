@@ -14,7 +14,7 @@ controls: true
 ::: incremental
 # Git and Github
 
-![alt text](image.png)
+![](image.png)
 
 Git and Github are often used together, but they are different. Git is a version control system that allows you to track changes in your files.
 
@@ -24,7 +24,7 @@ GitHub is an online platform that uses Git to host repos collaboratively. Develo
 ::: incremental
 # Secure Socket Shell (SSH)
 
-![alt text](image-1.png)
+![](image-1.png)
 
 SSH is cryptographic system that allows you to secure digital assets with strong ciphers. In Github, SSH allows you to access your work on Github from the command line safely.
 
@@ -35,131 +35,26 @@ To access your private Git repos locally, you install an SSH key on your compute
 # Clone, Commit, Push
 
 Clone, add, commit, and push are three very important `git` commands! See syntax beneath each concept.
-- *Cloning* means making a local copy of a repo from GitHub. 
-  - **`git clone <repo-link>`**
-- *Adding* files allows them to be part of the next commit.
-  - **`git add .`**
-  - ⬆️ note the dot, which adds all files in the current directory to the next commit!
-- *Commits* are versions of your code that have been saved with a message, so you can retrace your steps.
-  - **`git commit -m <commit-message>`**
-- *pushing* means sending your local changes to the remote version of your code on GitHub.
-  - **`git push`**
+
+* *Cloning* means making a local copy of a repo from GitHub. 
+  * **`git clone <repo-link>`**
+* *Adding* files allows them to be part of the next commit.
+  * **`git add .`**
+  * ⬆️ note the dot, which adds all files in the current directory to the next commit!
+* *Commits* are versions of your code that have been saved with a message, so you can retrace your steps.
+  * **`git commit -m <commit-message>`**
+* *pushing* means sending your local changes to the remote version of your code on GitHub.
+  * **`git push`**
 
 
 
 
 :::
+
 ::: incremental
+
 # Embrace Frustration!
 
-Learning to work locally is a frustrating process. It often feels like two steps forward, one step back. But remember, it's often true that greater challenge means greater reward! :::
-
----
-title: "Git Github"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# Git and Github
-
-![alt text](image.png)
-
-Git and Github are often used together, but they are different. Git is a version control system that allows you to track changes in your files.
-
-GitHub is an online platform that uses Git to host repos collaboratively. Developers use Git to manage code versions locally, and GitHub for sharing, collaborating, and managing repos online. This allows for teamwork, open-source coding, and sharing code with your classmates and professor! 
+Learning to work locally is a frustrating process. It often feels like two steps forward, one step back. But remember, it's often true that greater challenge means greater reward! 
 
 :::
-::: incremental
-# Secure Socket Shell (SSH)
-
-![alt text](image-1.png)
-
-SSH is cryptographic system that allows you to secure digital assets with strong ciphers. In Github, SSH allows you to access your work on Github from the command line safely.
-
-To access your private Git repos locally, you install an SSH key on your computer. This key unlocks your assets so you can easily sync your local repos to Github. 
-
-:::
-::: incremental
-# Clone, Commit, Push
-
-Clone, add, commit, and push are three very important `git` commands! See syntax beneath each concept.
-- *Cloning* means making a local copy of a repo from GitHub. 
-  - **`git clone <repo-link>`**
-- *Adding* files allows them to be part of the next commit.
-  - **`git add .`**
-  - ⬆️ note the dot, which adds all files in the current directory to the next commit!
-- *Commits* are versions of your code that have been saved with a message, so you can retrace your steps.
-  - **`git commit -m <commit-message>`**
-- *pushing* means sending your local changes to the remote version of your code on GitHub.
-  - **`git push`**
-
-
-
-
-:::
-::: incremental
-# Embrace Frustration!
-
-Learning to work locally is a frustrating process. It often feels like two steps forward, one step back. But remember, it's often true that greater challenge means greater reward! :::
-
----
-title: "Git Github"
-subtitle: "CMPSC 100: Computational Expression, Spring 2025"
-author: "Morgan Green"
-slide-number: true
-format:
-  revealjs: 
-    theme: [dark, ../custom.scss]
-touch: true
-controls: true
----
-
-::: incremental
-# Git and Github
-
-![alt text](image.png)
-
-Git and Github are often used together, but they are different. Git is a version control system that allows you to track changes in your files.
-
-GitHub is an online platform that uses Git to host repos collaboratively. Developers use Git to manage code versions locally, and GitHub for sharing, collaborating, and managing repos online. This allows for teamwork, open-source coding, and sharing code with your classmates and professor! 
-
-:::
-::: incremental
-# Secure Socket Shell (SSH)
-
-![alt text](image-1.png)
-
-SSH is cryptographic system that allows you to secure digital assets with strong ciphers. In Github, SSH allows you to access your work on Github from the command line safely.
-
-To access your private Git repos locally, you install an SSH key on your computer. This key unlocks your assets so you can easily sync your local repos to Github. 
-
-:::
-::: incremental
-# Clone, Commit, Push
-
-Clone, add, commit, and push are three very important `git` commands! See syntax beneath each concept.
-- *Cloning* means making a local copy of a repo from GitHub. 
-  - **`git clone <repo-link>`**
-- *Adding* files allows them to be part of the next commit.
-  - **`git add .`**
-  - ⬆️ note the dot, which adds all files in the current directory to the next commit!
-- *Commits* are versions of your code that have been saved with a message, so you can retrace your steps.
-  - **`git commit -m <commit-message>`**
-- *pushing* means sending your local changes to the remote version of your code on GitHub.
-  - **`git push`**
-
-
-
-
-:::
-::: incremental
-# Embrace Frustration!
-
-Learning to work locally is a frustrating process. It often feels like two steps forward, one step back. But remember, it's often true that greater challenge means greater reward! :::

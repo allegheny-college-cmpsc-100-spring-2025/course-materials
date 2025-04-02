@@ -126,34 +126,6 @@
     "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
   },
   {
-    "objectID": "local-python/index.html#relative-paths-1",
-    "href": "local-python/index.html#relative-paths-1",
-    "title": "Local Python",
-    "section": "Relative Paths",
-    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
-  },
-  {
-    "objectID": "local-python/index.html#absolute-paths-1",
-    "href": "local-python/index.html#absolute-paths-1",
-    "title": "Local Python",
-    "section": "Absolute Paths",
-    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
-  },
-  {
-    "objectID": "local-python/index.html#relative-paths-2",
-    "href": "local-python/index.html#relative-paths-2",
-    "title": "Local Python",
-    "section": "Relative Paths",
-    "text": "Relative Paths\nRelative paths are specified relative to the current working directory of the script or the location from where the script is executed.\nAssuming the current directory contains a folder named build with a file named main.py, this line would run the python code inside build/main.py:\npython main.py"
-  },
-  {
-    "objectID": "local-python/index.html#absolute-paths-2",
-    "href": "local-python/index.html#absolute-paths-2",
-    "title": "Local Python",
-    "section": "Absolute Paths",
-    "text": "Absolute Paths\nAbsolute paths specify the complete path from the root directory of the file system to the desired file or directory. You can get the absolute path of a file by dragging it into the terminal window.\nThis would run the same main.py code as above, this time referencing the absolute path.\npython '/home/user/projects/project_name/data/file.txt'\nAbsolute paths are different on different computers, whereas relative paths are the same assuming the same directory contents.\n\nWhen to Use Each?\n\nRelative Paths: Convenient for referencing files within the project structure, making code more portable.\nAbsolute Paths: Necessary when the file’s location is fixed and independent of the execution environment or when accessing files outside the project directory.\n\n\nUnderstanding relative and absolute paths helps in managing file operations effectively in Python scripts."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -268,20 +240,6 @@
   {
     "objectID": "classes-methods/index.html#explanation",
     "href": "classes-methods/index.html#explanation",
-    "title": "Classes Methods",
-    "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
-  },
-  {
-    "objectID": "classes-methods/index.html#explanation-1",
-    "href": "classes-methods/index.html#explanation-1",
-    "title": "Classes Methods",
-    "section": "Explanation",
-    "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
-  },
-  {
-    "objectID": "classes-methods/index.html#explanation-2",
-    "href": "classes-methods/index.html#explanation-2",
     "title": "Classes Methods",
     "section": "Explanation",
     "text": "Explanation\nThis code defines a class named Car. It has a constructor method init() that initializes the make, model, and year attributes of the car object. The display_info() method prints information about the car’s make, model, and year when called.\nSee it on Trinket"
