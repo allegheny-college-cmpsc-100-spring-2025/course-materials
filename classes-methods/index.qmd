@@ -1,6 +1,6 @@
 
 ---
-title: "Classes Methods"
+title: "Classes and Methods"
 subtitle: "CMPSC 100: Computational Expression, Spring 2025"
 author: "Morgan Green"
 slide-number: true
@@ -10,7 +10,7 @@ format:
 touch: true
 controls: true
 ---
-
+<!--
 ::: incremental
 # Classes & Methods, Welcome Activity
 
@@ -35,6 +35,7 @@ In today's Discord thread, see if you can guess the answers to any of the follow
 - Which piece of code defines the classes constructor method? What do you think a constructor method does? 
 
 :::
+-->
 
 ::: incremental
 # Introduction to Classes and Methods in Python
@@ -87,13 +88,7 @@ This code defines a class named Car. It has a constructor method __init__() that
 
 In Python classes and methods, `self` refers to the instance of the class itself. It is the first parameter of instance methods and is used to access and manipulate the attributes and methods of the object.
 
-**Key Points:**
-- `self` is not a reserved keyword, but it is a convention to use it as the first parameter in instance methods.
-- It allows methods to access and modify the attributes of the instance to which they belong.
-- When calling methods of an instance, Python automatically passes the instance itself as the first argument (i.e., `self`).
-
-Example:
-
+<br>
 ```python
 class MyClass:
     def __init__(self, x):
@@ -113,13 +108,7 @@ obj.print_x() # Output: 5
 
 The constructor method in Python classes, denoted by `__init__`, is called automatically when an instance of the class is created. It is used to initialize the attributes of the instance.
 
-**Key Points:**
-- The constructor method is used to set up the initial state of the object.
-- It is defined using the `def __init__(self, ...)` syntax within the class definition.
-- The constructor can accept arguments to initialize instance attributes.
-- It is called implicitly when an instance of the class is created using the class name followed by parentheses.
-
-Example:
+<br>
 
 ```python
 class Car:
@@ -138,14 +127,9 @@ car2 = Car("Honda", "Accord")
 
 In Python, instances are individual objects created from a class. Each instance has its own set of attributes, which are variables associated with the instance. Attributes store data specific to each instance.
 
-**Key Points:**
-- Instances are created by calling the class as if it were a function.
-- Each instance has its own namespace, allowing it to have unique attributes.
-- Attributes are accessed using dot notation (`instance.attribute`).
-- Attributes can be assigned values during object creation (in the constructor) or dynamically during the object's lifetime.
+Attributes are accessed using dot notation (`instance.attribute`).
 
-Example:
-
+<br>
 ```python
 class Car:
     def __init__(self, make, model):
@@ -162,18 +146,11 @@ print(car2.model) # Output: Accord
 :::
 
 ::: incremental
-# Python Class Methods
+# Additional Methods
 
 In addition to the constructor method (`__init__`), Python classes can have other methods to perform various tasks or operations on class instances.
 
-**Key Points:**
-- Methods are functions defined within a class.
-- They operate on the attributes of class instances and can perform specific actions or computations.
-- Methods are defined using the `def` keyword within the class definition.
-- They typically accept `self` as the first parameter to reference the instance on which the method is called.
-
-Example:
-
+<br>
 ```python
 class Circle:
     def __init__(self, radius):
@@ -198,17 +175,16 @@ print("Perimeter:", circle.perimeter()) # Output: 31.4
 
 We have already been using classes and methods in VPython. Every shape in VPython is its own class. 
 
-<img src = "image-1.png" style = "max-width:500px" />
+<img src = "image-1.png"  />
 
 Because the shape constructor methods operate very similar to a regular function, we have been discussing shapes that way for simplicity. However, there is one shape **method** we have used several times. Can you remember what it is? 
 
-[-> Stick Figure example](/classes-methods/10_stickFigureExample.md)
 :::
 
 ::: incremental
 # Stick Figure Example 
 
-<img src = "image.png" style = "max-width:500px" />
+<img src = "image.png" style = />
 
 [This example](https://trinket.io/glowscript/68101cfb67) takes our stick figure code from previous classes and puts it in a class. What new capabilties can we give the stick figure in this format? 
 :::
